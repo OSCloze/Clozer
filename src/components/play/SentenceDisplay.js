@@ -2,22 +2,28 @@
 import React from 'react';
 import { words } from '../../data/words';
 
-export default function SentenceDisplay({ 
-  sentence, 
-  userAnswer, 
+export default function SentenceDisplay({
+  sentence,
+  userAnswer,
   setUserAnswer,
   isAnswered,
   feedback,
   onCheck,
   onWordClick
 }) {
-  
+
   const handleKeyDown = (e) => {
     e.stopPropagation();
     if (e.key === 'Enter' && userAnswer.trim()) {
       e.preventDefault();
       onCheck();
     }
+  };
+
+  // Find the word data for the answer (if answered)
+  const getAnswerWordData = () => {
+    const answerWordId = sentence.targetWordId;
+    return words[answerWordId];
   };
 
   return (
@@ -27,13 +33,14 @@ export default function SentenceDisplay({
         {sentence.words && sentence.words.map((word, idx) => {
           // Check if this word is the one that should be blank
           const isBlankWord = word.wordId === sentence.blankWordId;
-          
+
           return (
             <span
               key={idx}
               className={`clickable-word ${word.isPunctuation ? 'punctuation' : ''} ${isBlankWord ? 'answer-word' : ''}`}
               onClick={() => {
-                if (!word.isPunctuation && word.wordId && !isBlankWord) {
+                // Allow clicking on any non-punctuation word, including the answer word after it's answered
+                if (!word.isPunctuation && word.wordId) {
                   // Find the word data to show in translation box
                   const wordData = words[word.wordId];
                   if (wordData) {
@@ -61,7 +68,8 @@ export default function SentenceDisplay({
                   }}
                 />
               ) : isBlankWord && isAnswered ? (
-                <span className={`${feedback.includes('Correct') ? 'answer-correct' : 'answer-incorrect'}`}>
+                // Make the answer word clickable by wrapping it in a span with the clickable-word class
+                <span className={`${feedback.includes('Correct') ? 'answer-correct' : 'answer-incorrect'} clickable-answer`}>
                   {sentence.answer}
                 </span>
               ) : (

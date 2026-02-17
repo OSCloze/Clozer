@@ -28,7 +28,7 @@ export default function WordsPage() {
       <header className="header">
         <h1>Words</h1>
         <p className="header-desc">
-          All words are visible. Mastery increases when you correctly answer sentences containing these words.
+          These are the words used to make each Sentence level. Once you answer a sentence correctly with the target word, it will highlight green and start to be tracked.
         </p>
       </header>
 

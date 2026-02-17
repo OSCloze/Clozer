@@ -62,9 +62,9 @@ export default function SetupScreen({
           </select>
         </div>
         
-        <button 
-          type="button" 
-          className="btn btn-primary"
+        <button
+          type="button"
+          className="btn btn-primary btn-full"
           onClick={onStart}
         >
           Start Session

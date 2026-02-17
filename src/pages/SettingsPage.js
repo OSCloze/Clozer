@@ -22,17 +22,16 @@ export default function SettingsPage() {
     <section className="view is-active" data-view="settings">
       <header className="header">
         <h1>Settings</h1>
-        <p className="header-desc">Manage your learning progress and app preferences.</p>
+        <p className="header-desc"></p>
       </header>
 
       <div className="settings-panel">
         <h2 className="settings-subtitle">Progress</h2>
         <p className="settings-desc">Reset all your learning progress. This will clear:</p>
         <ul className="settings-list">
-          <li>✓ Word mastery counts (all correct answers)</li>
-          <li>✓ Revealed sentences</li>
-          <li>✓ Completed sentence levels</li>
-          <li>✓ Session history</li>
+          <li>Words Learned</li>
+          <li>Sentences Revealed</li>
+          <li>Session History</li>
         </ul>
         <p className="settings-warning">
           ⚠️ This action cannot be undone. All progress will be permanently lost.
@@ -48,14 +47,11 @@ export default function SettingsPage() {
         
         <h2 className="settings-subtitle" style={{ marginTop: '2rem' }}>About</h2>
         <p className="settings-desc">
-          <strong>Cloze Chinese</strong> • Version 1.0
+          <strong>Cloze Chinese</strong> • Made by Nick
         </p>
         <p className="settings-desc">
           A fill-in-the-blank language learning app for Simplified Chinese. 
-          Master words by correctly answering sentences, and unlock new levels as you progress.
-        </p>
-        <p className="settings-desc" style={{ marginTop: '1rem', color: 'var(--accent2)' }}>
-          🎯 {Object.keys(wordMastery).length} words practiced · {answeredSentences.length} sentences revealed
+          100% free to play.
         </p>
       </div>
     </section>

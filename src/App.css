@@ -1318,6 +1318,12 @@ body {
   }
 }
 
+/* Full width button */
+.btn-full {
+  width: 100%;
+}
+
+
 /* Make answered words clickable */
 .clickable-answer {
   cursor: pointer;
@@ -1436,4 +1442,12 @@ body {
 
 .pleco-icon {
   font-size: 1.2rem;
+}
+
+.pleco-word-hint {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+  text-align: center;
+  font-style: italic;
 }

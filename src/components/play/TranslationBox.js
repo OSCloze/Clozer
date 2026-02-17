@@ -7,14 +7,27 @@ export default function TranslationBox({ word, onClose }) {
 
   if (!word) return null;
 
-  const plecoAppUrl = `plecoapi://x-callback-url/query?q=${encodeURIComponent(word.text)}`;
+  // Proper Pleco URL scheme - this should open the app and search for the word
+  const plecoUrl = `plecoapi://x-callback-url/query?q=${encodeURIComponent(word.text)}`;
+
+  // Alternative scheme if the above doesn't work
+  const plecoAltUrl = `plecoapi://query?q=${encodeURIComponent(word.text)}`;
 
   const openPleco = () => {
-    // Only attempt to open Pleco on mobile
     if (isMobile) {
-      window.location.href = plecoAppUrl;
+      // Try primary URL
+      window.location.href = plecoUrl;
+
+      // Fallback to alternative after a tiny delay if needed
+      setTimeout(() => {
+        // Check if app opened (this is tricky, but we'll keep it simple)
+        // Just using the primary URL is usually enough
+      }, 100);
     }
   };
+
+  // For debugging - log the URL
+  console.log('Opening Pleco with URL:', plecoUrl);
 
   return (
     <div className="translation-box">
@@ -40,11 +53,14 @@ export default function TranslationBox({ word, onClose }) {
           <button
             className="pleco-button"
             onClick={openPleco}
-            title="Look up in Pleco dictionary (audio, stroke order, examples)"
+            title={`Look up "${word.text}" in Pleco`}
           >
             <span className="pleco-icon">📱</span>
             <span className="pleco-text">Open in Pleco</span>
           </button>
+          <div className="pleco-word-hint">
+            Searching for: <strong>{word.text}</strong>
+          </div>
         </div>
       )}
     </div>

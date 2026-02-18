@@ -1,6 +1,6 @@
 // src/components/play/SentenceDisplay.js
 import React from 'react';
-import { words } from '../../data/words';
+import { words, sentences, levels, getWordsForLevel, getSentencesForLevel } from '../../data';
 
 export default function SentenceDisplay({
   sentence,

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { useGameSession } from '../hooks/useGameSession';
-import { getSentencesForLevel } from '../data/sentences';
+import { getSentencesForLevel, getWordsForLevel } from '../data';
 import { getAvailableLevels, isLevelUnlocked } from '../utils/sentenceHelpers';
 import { selectSessionSentences } from '../utils/gameHelpers';
 import SetupScreen from '../components/play/SetupScreen';

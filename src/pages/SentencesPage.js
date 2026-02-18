@@ -1,8 +1,7 @@
 // src/pages/SentencesPage.js
 import React from 'react';
 import { useApp } from '../context/AppContext';
-import { sentences } from '../data/sentences';
-import { getWordsForLevel } from '../data/levels';
+import { words, sentences, levels, getWordsForLevel, getSentencesForLevel } from '../data';
 
 export default function SentencesPage() {
   const { 

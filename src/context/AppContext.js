@@ -2,7 +2,8 @@
 import React, { createContext, useContext, useState } from 'react';
 import { useWordMastery } from '../hooks/useWordMastery';
 import { useSentenceProgress } from '../hooks/useSentenceProgress';
-import { levels } from '../data/levels';
+import { levels } from '../data';
+import { sentences } from '../data/sentences';
 
 const AppContext = createContext();
 

@@ -1,7 +1,7 @@
 // src/pages/WordsPage.js
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
-import { getWordsForLevel } from '../data/levels';
+import { words, sentences, levels, getWordsForLevel, getSentencesForLevel } from '../data';
 import WordGrid from '../components/words/WordGrid';
 import WordModal from '../components/words/WordModal';
 

@@ -1,4 +1,5 @@
-import { words } from './words';
+// src/data/levels.js
+import { words } from './words/index';
 
 export const levels = [
   {
@@ -40,20 +41,31 @@ export const levels = [
     wordIds: [52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62],
     isStarter: false,
     isPermanent: false
+  },
+  {
+    id: 6,
+    name: "Level 6",
+    description: "10 travel and transportation words",
+    wordIds: [63, 64, 65, 66, 67, 68, 69, 70, 71, 72],
+    isStarter: false,
+    isPermanent: false
   }
 ];
 
+// Helper to get all words for a level
 export const getWordsForLevel = (levelId) => {
   const level = levels.find(l => l.id === levelId);
   if (!level) return [];
   return level.wordIds.map(id => words[id]).filter(Boolean);
 };
 
+// Helper to check if level is starter pack
 export const isStarterLevel = (levelId) => {
   const level = levels.find(l => l.id === levelId);
   return level ? level.isStarter : false;
 };
 
+// Helper to check if level is permanent (cannot be unlearned)
 export const isPermanentLevel = (levelId) => {
   const level = levels.find(l => l.id === levelId);
   return level ? level.isPermanent : false;

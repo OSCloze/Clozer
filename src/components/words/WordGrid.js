@@ -2,18 +2,19 @@
 import React from 'react';
 import WordCard from './WordCard';
 
-export default function WordGrid({ 
-  words, 
-  wordMastery, 
-  selectedWordId, 
-  onWordClick 
+export default function WordGrid({
+  words,
+  wordMastery,
+  selectedWordId,
+  onWordClick,
+  isFoundation = false
 }) {
   return (
     <div className="word-grid">
       {words.map((word) => {
         const masteryCount = wordMastery[word.id] || 0;
         const isSelected = selectedWordId === word.id;
-        
+
         return (
           <WordCard
             key={word.id}
@@ -21,6 +22,7 @@ export default function WordGrid({
             masteryCount={masteryCount}
             isSelected={isSelected}
             onClick={() => onWordClick(word)}
+            isFoundation={isFoundation}
           />
         );
       })}

@@ -7,8 +7,7 @@ export default function Navigation() {
 
   const navItems = [
     { id: 'play', label: 'Play' },
-    { id: 'words', label: 'Words' },
-    { id: 'levels', label: 'Sentences' },
+    { id: 'chapters', label: 'Chapters' },  // Changed from 'levels' or 'sentences'
     { id: 'settings', label: 'Settings' }
   ];
 
@@ -16,16 +15,16 @@ export default function Navigation() {
     <nav className="nav" aria-label="Main">
       {navItems.map(item => (
         <a
-  href="#"
-  className={`nav-link ${currentPage === item.id ? 'active' : ''}`}
-  onClick={(e) => {
-    e.preventDefault();
-    setCurrentPage(item.id);
-  }}
-  /* eslint-disable-next-line jsx-a11y/anchor-is-valid */
->
-  {item.label}
-</a>
+          key={item.id}
+          href="#"
+          className={`nav-link ${currentPage === item.id ? 'active' : ''}`}
+          onClick={(e) => {
+            e.preventDefault();
+            setCurrentPage(item.id);
+          }}
+        >
+          {item.label}
+        </a>
       ))}
     </nav>
   );

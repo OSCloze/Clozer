@@ -1,0 +1,154 @@
+{
+    "level": 7,
+    "name": "Introductions II",
+    "desc": "Introduce yourself and others with more detail, including work, hobbies, and background.",
+    "icon": "👋",
+    "hsk": 2,
+    "sentences": [
+        {
+            "id": 701,
+            "text": "我 在 一家 公司 工作 。",
+            "native": "I work at a company.",
+            "answer": "公司",
+            "explain": "公司 (gōngsī) means 'company'.",
+            "words": [
+                389,
+                464,
+                436,
+                178,
+                -703,
+                133,
+                0
+            ]
+        },
+        {
+            "id": 702,
+            "text": "我 的 经理 很 友好 。",
+            "native": "My manager is very friendly.",
+            "answer": "经理",
+            "explain": "经理 (jīnglǐ) means 'manager'.",
+            "words": [
+                389,
+                76,
+                -809,
+                155,
+                1192,
+                0
+            ]
+        },
+        {
+            "id": 703,
+            "text": "我 的 同事 很 友好 。",
+            "native": "My colleagues are very friendly.",
+            "answer": "同事",
+            "explain": "同事 (tóngshì) means 'colleague'.",
+            "words": [
+                389,
+                76,
+                -1056,
+                155,
+                1192,
+                0
+            ]
+        },
+        {
+            "id": 704,
+            "text": "我 的 朋友 很 友好 。",
+            "native": "My friends are very friendly.",
+            "answer": "友好",
+            "explain": "友好 (yǒuhǎo) means 'friendly'.",
+            "words": [
+                389,
+                76,
+                293,
+                155,
+                -1192,
+                0
+            ]
+        },
+        {
+            "id": 705,
+            "text": "我 是 留学生 。",
+            "native": "I am a foreign student.",
+            "answer": "留学生",
+            "explain": "留学生 (liúxuéshēng) means 'student studying abroad'.",
+            "words": [
+                389,
+                346,
+                -871,
+                0
+            ]
+        },
+        {
+            "id": 706,
+            "text": "我 喜欢 运动 。",
+            "native": "I like sports.",
+            "answer": "运动",
+            "explain": "运动 (yùndòng) means 'sports'.",
+            "words": [
+                389,
+                397,
+                -1211,
+                0
+            ]
+        },
+        {
+            "id": 707,
+            "text": "我 也 喜欢 音乐 。",
+            "native": "I also like music.",
+            "answer": "音乐",
+            "explain": "音乐 (yīnyuè) means 'music'.",
+            "words": [
+                389,
+                434,
+                397,
+                -1180,
+                0
+            ]
+        },
+        {
+            "id": 708,
+            "text": "你 的 姓名 是 什么 ？",
+            "native": "What is your full name?",
+            "answer": "姓名",
+            "explain": "姓名 (xìngmíng) means 'full name'.",
+            "words": [
+                280,
+                76,
+                -1136,
+                346,
+                337,
+                2
+            ]
+        },
+        {
+            "id": 709,
+            "text": "你 出生 在 哪里 ？",
+            "native": "Where were you born?",
+            "answer": "出生",
+            "explain": "出生 (chūshēng) means 'to be born'.",
+            "words": [
+                280,
+                -581,
+                464,
+                260,
+                2
+            ]
+        },
+        {
+            "id": 710,
+            "text": "我 平时 喜欢 听 音乐 。",
+            "native": "I usually like listening to music.",
+            "answer": "平时",
+            "explain": "平时 (píngshí) means 'usually'.",
+            "words": [
+                389,
+                -930,
+                397,
+                370,
+                1180,
+                0
+            ]
+        }
+    ]
+}

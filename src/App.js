@@ -10,7 +10,7 @@ import './App.css'; // Make sure this exists
 function App() {
   return (
     <AppProvider>
-      <BrowserRouter basename="/game">
+      <BrowserRouter basename="/Clozer">
         <div className="app">
           <Navigation />
           <main className="main-content">

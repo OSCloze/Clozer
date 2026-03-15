@@ -119,26 +119,6 @@ export default function SetupScreen({ onStart }) {
               </label>
             ))}
           </div>
-
-          {/* Selection summary and buttons moved here */}
-          <div className="level-selection-footer">
-            <div className="level-selection-actions">
-              <button
-                className="btn-small"
-                onClick={selectAllLevels}
-                type="button"
-              >
-                Select All
-              </button>
-              <button
-                className="btn-small"
-                onClick={clearAllLevels}
-                type="button"
-              >
-                Clear
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Number of Questions Dropdown */}
@@ -166,7 +146,7 @@ export default function SetupScreen({ onStart }) {
           onClick={handleStart}
           disabled={selectedLevels.length === 0}
         >
-          Start Session ({selectedLevels.length} level{selectedLevels.length !== 1 ? 's' : ''})
+          Start Session
         </button>
       </div>
     </div>

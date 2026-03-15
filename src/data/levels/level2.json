@@ -1,0 +1,128 @@
+{
+  "level": 2,
+  "name": "Food & Drink",
+  "desc": "Learn to talk about food, order meals, and describe tastes",
+  "icon": "🍜",
+  "sentences": [
+    {
+      "id": 201,
+      "text": "你 想 吃 什么 ？",
+      "native": "What do you want to eat?",
+      "answer": "吃",
+      "explain": "吃 (chī) means 'to eat'.",
+      "words": [280, 409, -55, 337, 2]
+    },
+    {
+      "id": 202,
+      "text": "我 想 吃 米饭 。",
+      "native": "I want to eat rice.",
+      "answer": "米饭",
+      "explain": "米饭 (mǐfàn) means 'cooked rice'.",
+      "words": [389, 409, 55, -251, 0]
+    },
+    {
+      "id": 203,
+      "text": "你 喝 茶 吗 ？",
+      "native": "Do you drink tea?",
+      "answer": "茶",
+      "explain": "茶 (chá) means 'tea'.",
+      "words": [280, 153, -45, 236, 2]
+    },
+    {
+      "id": 204,
+      "text": "我 喜欢 喝 牛奶 。",
+      "native": "I like to drink milk.",
+      "answer": "牛奶",
+      "explain": "牛奶 (niúnǎi) means 'milk'.",
+      "words": [389, 397, 153, -284, 0]
+    },
+    {
+      "id": 205,
+      "text": "这 个 苹果 很 好吃 。",
+      "native": "This apple is very delicious.",
+      "answer": "好吃",
+      "explain": "好吃 (hǎochī) means 'delicious'.",
+      "words": [473, 129, -148, 155, 148, 0]
+    },
+    {
+      "id": 206,
+      "text": "你 吃 过 面包 吗 ？",
+      "native": "Have you eaten bread?",
+      "answer": "面包",
+      "explain": "面包 (miànbāo) means 'bread'.",
+      "words": [280, 55, 140, -252, 236, 2]
+    },
+    {
+      "id": 207,
+      "text": "我 想 吃 面条儿 。",
+      "native": "I want to eat noodles.",
+      "answer": "面条儿",
+      "explain": "面条儿 (miàntiáor) means 'noodles'.",
+      "words": [389, 409, 55, -253, 0]
+    },
+    {
+      "id": 208,
+      "text": "这 个 菜 很 好吃 。",
+      "native": "This dish is very delicious.",
+      "answer": "菜",
+      "explain": "菜 (cài) means 'dish' or 'vegetable'.",
+      "words": [473, 129, -44, 155, 148, 0]
+    },
+    {
+      "id": 209,
+      "text": "我 不 吃 肉 。",
+      "native": "I don't eat meat.",
+      "answer": "肉",
+      "explain": "肉 (ròu) means 'meat'.",
+      "words": [389, 43, 55, -319, 0]
+    },
+    {
+      "id": 210,
+      "text": "你 想 喝 什么 ？",
+      "native": "What do you want to drink?",
+      "answer": "喝",
+      "explain": "喝 (hē) means 'to drink'.",
+      "words": [280, 409, -153, 337, 2]
+    },
+    {
+      "id": 211,
+      "text": "我 想 喝 水 。",
+      "native": "I want to drink water.",
+      "answer": "水",
+      "explain": "水 (shuǐ) means 'water'.",
+      "words": [389, 409, 153, -354, 0]
+    },
+    {
+      "id": 212,
+      "text": "你 喜欢 吃 水果 吗 ？",
+      "native": "Do you like to eat fruit?",
+      "answer": "水果",
+      "explain": "水果 (shuǐguǒ) means 'fruit'.",
+      "words": [280, 397, 55, -355, 236, 2]
+    },
+    {
+      "id": 213,
+      "text": "我 喜欢 吃 苹果 。",
+      "native": "I like to eat apples.",
+      "answer": "苹果",
+      "explain": "苹果 (píngguǒ) means 'apple'.",
+      "words": [389, 397, 55, -148, 0]
+    },
+    {
+      "id": 214,
+      "text": "请 给 我 一 杯 茶 。",
+      "native": "Please give me a cup of tea.",
+      "answer": "杯",
+      "explain": "杯 (bēi) is a measure word for cups of drinks.",
+      "words": [305, 130, 389, 436, -26, 45, 0]
+    },
+    {
+      "id": 215,
+      "text": "这 个 包子 很 好吃 。",
+      "native": "This bun is very delicious.",
+      "answer": "包子",
+      "explain": "包子 (bāozi) means 'steamed bun'.",
+      "words": [473, 129, -25, 155, 148, 0]
+    }
+  ]
+}

@@ -1,27 +1,34 @@
 // src/components/layout/Navigation.js
 import React from 'react';
-import { useApp } from '../../context/AppContext';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function Navigation() {
-  const { currentPage, setCurrentPage } = useApp();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Get current path without slash
+  const currentPath = location.pathname.substring(1) || 'play';
 
   const navItems = [
     { id: 'play', label: 'Play' },
-    { id: 'chapters', label: 'Chapters' },  // Changed from 'levels' or 'sentences'
+    { id: 'levels', label: 'Levels' },  // Changed from 'chapters' to match routes
+    { id: 'words', label: 'Words' },
     { id: 'settings', label: 'Settings' }
   ];
+
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    navigate(`/${id}`);
+  };
 
   return (
     <nav className="nav" aria-label="Main">
       {navItems.map(item => (
         <a
           key={item.id}
-          href="#"
-          className={`nav-link ${currentPage === item.id ? 'active' : ''}`}
-          onClick={(e) => {
-            e.preventDefault();
-            setCurrentPage(item.id);
-          }}
+          href={`/${item.id}`}
+          className={`nav-link ${currentPath === item.id ? 'active' : ''}`}
+          onClick={(e) => handleNavClick(e, item.id)}
         >
           {item.label}
         </a>

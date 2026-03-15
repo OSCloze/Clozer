@@ -31,13 +31,6 @@ export default function WordCard({ word, masteryCount, isSelected, onClick, isFo
       <span className="word-character">{word.character}</span>
       <span className="word-pinyin">{word.pinyin}</span>
       <span className="word-meaning">{word.meaning}</span>
-      {!isFoundation && masteryCount > 0 && (
-        <div className="word-mastery">
-          <span className="mastery-badge">
-            ✓ {masteryCount}
-          </span>
-        </div>
-      )}
     </div>
   );
 }

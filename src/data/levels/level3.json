@@ -1,0 +1,213 @@
+{
+    "level": 3,
+    "name": "Feelings",
+    "desc": "Learn to express emotions and physical states",
+    "icon": "😊",
+    "sentences": [
+        {
+            "id": 301,
+            "text": "我 很 高兴 。",
+            "native": "I am very happy.",
+            "answer": "高兴",
+            "explain": "高兴 (gāoxìng) means 'happy'.",
+            "words": [
+                389,
+                155,
+                -125,
+                0
+            ]
+        },
+        {
+            "id": 302,
+            "text": "你 累 吗 ？",
+            "native": "Are you tired?",
+            "answer": "累",
+            "explain": "累 (lèi) means 'tired'.",
+            "words": [
+                280,
+                -220,
+                236,
+                2
+            ]
+        },
+        {
+            "id": 303,
+            "text": "我 不 饿 。",
+            "native": "I am not hungry.",
+            "answer": "饿",
+            "explain": "饿 (è) means 'hungry'. 不 (bù) negates the feeling.",
+            "words": [
+                389,
+                43,
+                -105,
+                0
+            ]
+        },
+        {
+            "id": 304,
+            "text": "他 很 忙 。",
+            "native": "He is very busy.",
+            "answer": "忙",
+            "explain": "忙 (máng) means 'busy'.",
+            "words": [
+                363,
+                155,
+                -239,
+                0
+            ]
+        },
+        {
+            "id": 305,
+            "text": "今天 很 热 。",
+            "native": "Today is hot.",
+            "answer": "热",
+            "explain": "热 (rè) means 'hot'.",
+            "words": [
+                190,
+                155,
+                -313,
+                0
+            ]
+        },
+        {
+            "id": 306,
+            "text": "我 渴 了 。",
+            "native": "I am thirsty.",
+            "answer": "渴",
+            "explain": "渴 (kě) means 'thirsty'. 了 (le) indicates a change of state.",
+            "words": [
+                389,
+                -207,
+                219,
+                0
+            ]
+        },
+        {
+            "id": 307,
+            "text": "你 冷 吗 ？",
+            "native": "Are you cold?",
+            "answer": "冷",
+            "explain": "冷 (lěng) means 'cold'.",
+            "words": [
+                280,
+                -221,
+                236,
+                2
+            ]
+        },
+        {
+            "id": 308,
+            "text": "我 有 一点 累 。",
+            "native": "I am a little tired.",
+            "answer": "一点",
+            "explain": "一点 (yīdiǎn) means 'a little'.",
+            "words": [
+                389,
+                450,
+                -446,
+                220,
+                0
+            ]
+        },
+        {
+            "id": 309,
+            "text": "她 也 很 高兴 。",
+            "native": "She is also very happy.",
+            "answer": "也",
+            "explain": "也 (yě) means 'also'.",
+            "words": [
+                365,
+                -434,
+                155,
+                125,
+                0
+            ]
+        },
+        {
+            "id": 310,
+            "text": "今天 太 热 了 ！",
+            "native": "Today is too hot!",
+            "answer": "太",
+            "explain": "太 (tài) means 'too' (excessively).",
+            "words": [
+                190,
+                -367,
+                313,
+                219,
+                3
+            ]
+        },
+        {
+            "id": 311,
+            "text": "我 不 太 高兴 。",
+            "native": "I am not very happy.",
+            "answer": "太",
+            "explain": "不太 (bù tài) means 'not very'.",
+            "words": [
+                389,
+                43,
+                -367,
+                125,
+                0
+            ]
+        },
+        {
+            "id": 312,
+            "text": "你 为什么 不 高兴 ？",
+            "native": "Why are you not happy?",
+            "answer": "为什么",
+            "explain": "为什么 (wèishénme) means 'why'.",
+            "words": [
+                280,
+                -469,
+                43,
+                125,
+                2
+            ]
+        },
+        {
+            "id": 313,
+            "text": "因为 我 累 了 。",
+            "native": "Because I am tired.",
+            "answer": "因为",
+            "explain": "因为 (yīnwèi) means 'because'.",
+            "words": [
+                -453,
+                389,
+                220,
+                219,
+                0
+            ]
+        },
+        {
+            "id": 314,
+            "text": "他 不 忙 ， 他 很 高兴 。",
+            "native": "He is not busy, he is very happy.",
+            "answer": "忙",
+            "explain": "忙 (máng) means 'busy'.",
+            "words": [
+                363,
+                43,
+                -239,
+                1,
+                363,
+                155,
+                125,
+                0
+            ]
+        },
+        {
+            "id": 315,
+            "text": "你 感觉 怎么样 ？",
+            "native": "How do you feel?",
+            "answer": "怎么样",
+            "explain": "怎么样 (zěnmeyàng) means 'how' or 'how about'.",
+            "words": [
+                280,
+                -469,
+                307,
+                2
+            ]
+        }
+    ]
+}

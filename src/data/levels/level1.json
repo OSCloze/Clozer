@@ -1,0 +1,174 @@
+{
+    "level": 1,
+    "name": "Introductions",
+    "desc": "Learn to greet people and introduce yourself",
+    "icon": "👋",
+    "sentences": [
+        {
+            "id": 101,
+            "text": "你 好 ！ 我 叫 ...",
+            "native": "Hello! I am called ...",
+            "answer": "叫",
+            "explain": "叫 (jiào) means 'to be called'. Use it to introduce your name.",
+            "words": [
+                280,
+                147,
+                3,
+                389,
+                -185,
+                4
+            ]
+        },
+        {
+            "id": 102,
+            "text": "你 好 吗 ？ 我 很 好 。",
+            "native": "How are you? I am very good.",
+            "answer": "好",
+            "explain": "好 (hǎo) means 'good'. In the first sentence it's part of 'hello', in the second it's the answer.",
+            "words": [
+                280,
+                147,
+                236,
+                2,
+                389,
+                155,
+                -147,
+                0
+            ]
+        },
+        {
+            "id": 103,
+            "text": "请 问 ， 你 叫 什么 名字 ？",
+            "native": "Excuse me, what is your name?",
+            "answer": "什么",
+            "explain": "什么 (shénme) means 'what'. 请问 (qǐngwèn) is a polite way to start a question.",
+            "words": [
+                308,
+                1,
+                280,
+                185,
+                -337,
+                254,
+                2
+            ]
+        },
+        {
+            "id": 104,
+            "text": "我 叫 ... 你 呢 ？",
+            "native": "I am called ... and you?",
+            "answer": "呢",
+            "explain": "呢 (ne) is a particle used to turn a statement into a question about the listener.",
+            "words": [
+                389,
+                185,
+                4,
+                280,
+                -278,
+                2
+            ]
+        },
+        {
+            "id": 105,
+            "text": "我 是 学生 ， 你 也 是 学生 吗 ？",
+            "native": "I am a student, are you also a student?",
+            "answer": "也",
+            "explain": "也 (yě) means 'also' or 'too'. It comes before the verb.",
+            "words": [
+                389,
+                346,
+                428,
+                1,
+                280,
+                -434,
+                346,
+                428,
+                236,
+                2
+            ]
+        },
+        {
+            "id": 106,
+            "text": "我 不 是 老师 ， 我 是 学生 。",
+            "native": "I am not a teacher, I am a student.",
+            "answer": "不",
+            "explain": "不 (bù) means 'not'. It comes before the verb to negate it.",
+            "words": [
+                389,
+                -43,
+                346,
+                218,
+                1,
+                389,
+                346,
+                428,
+                0
+            ]
+        },
+        {
+            "id": 107,
+            "text": "很 高兴 认识 你 ！",
+            "native": "Very happy to meet you!",
+            "answer": "高兴",
+            "explain": "高兴 (gāoxìng) means 'happy'. This phrase is used when meeting someone for the first time.",
+            "words": [
+                155,
+                -125,
+                315,
+                280,
+                3
+            ]
+        },
+        {
+            "id": 108,
+            "text": "你 家 在 哪里 ？ 我 家 在 北京 。",
+            "native": "Where is your home? My home is in Beijing.",
+            "answer": "哪里",
+            "explain": "哪里 (nǎlǐ) means 'where'. 北京 (Běijīng) is the capital of China.",
+            "words": [
+                280,
+                178,
+                464,
+                -260,
+                2,
+                389,
+                178,
+                464,
+                30,
+                0
+            ]
+        },
+        {
+            "id": 109,
+            "text": "我 的 老师 很 好 。 你 的 老师 呢 ？",
+            "native": "My teacher is very good. How about your teacher?",
+            "answer": "的",
+            "explain": "的 (de) is a possessive particle. It shows ownership, like 's in English.",
+            "words": [
+                389,
+                -76,
+                218,
+                155,
+                147,
+                0,
+                280,
+                -76,
+                218,
+                278,
+                2
+            ]
+        },
+        {
+            "id": 110,
+            "text": "谢 谢 ！ 再 见 ！",
+            "native": "Thank you! Goodbye!",
+            "answer": "谢谢",
+            "explain": "谢谢 (xièxie) means 'thank you'. 再见 (zàijiàn) means 'goodbye'.",
+            "words": [
+                -419,
+                3,
+                463,
+                3
+            ]
+        }
+    ]
+}

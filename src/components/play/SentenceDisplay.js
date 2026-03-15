@@ -1,6 +1,5 @@
 // src/components/play/SentenceDisplay.js
 import React from 'react';
-import { words, sentences, levels, getWordsForLevel, getSentencesForLevel } from '../../data';
 
 export default function SentenceDisplay({
   sentence,
@@ -9,9 +8,9 @@ export default function SentenceDisplay({
   isAnswered,
   feedback,
   onCheck,
-  onWordClick
+  onWordClick,
+  usedDontKnow
 }) {
-
   const handleKeyDown = (e) => {
     e.stopPropagation();
     if (e.key === 'Enter' && userAnswer.trim()) {
@@ -20,38 +19,36 @@ export default function SentenceDisplay({
     }
   };
 
-  // Find the word data for the answer (if answered)
-  const getAnswerWordData = () => {
-    const answerWordId = sentence.targetWordId;
-    return words[answerWordId];
+  const handleWordClick = (word) => {
+    // Allow clicking on any non-punctuation word
+    if (!word.isPunctuation && word.wordId) {
+      const isBlankWord = word.isBlank;
+
+      // Only allow click if:
+      // - It's not the blank word, OR
+      // - It IS the blank word AND the question has been answered
+      if (!isBlankWord || (isBlankWord && isAnswered)) {
+        onWordClick({
+          text: word.text === "___" ? sentence.answer : word.text,
+          pinyin: word.pinyin,
+          meaning: word.meaning,
+          wordId: word.wordId
+        });
+      }
+    }
   };
 
   return (
     <>
-      {/* Clickable words with integrated blank */}
       <div className="sentence-clickable-container">
         {sentence.words && sentence.words.map((word, idx) => {
-          // Check if this word is the one that should be blank
-          const isBlankWord = word.wordId === sentence.blankWordId;
+          const isBlankWord = word.isBlank;
 
           return (
             <span
               key={idx}
-              className={`clickable-word ${word.isPunctuation ? 'punctuation' : ''} ${isBlankWord ? 'answer-word' : ''}`}
-              onClick={() => {
-                // Allow clicking on any non-punctuation word, including the answer word after it's answered
-                if (!word.isPunctuation && word.wordId) {
-                  // Find the word data to show in translation box
-                  const wordData = words[word.wordId];
-                  if (wordData) {
-                    onWordClick({
-                      text: wordData.character,
-                      pinyin: wordData.pinyin,
-                      meaning: wordData.meaning
-                    });
-                  }
-                }
-              }}
+              className={`clickable-word ${word.isPunctuation ? 'punctuation' : ''} ${isBlankWord ? 'answer-word' : ''} ${isBlankWord && !isAnswered ? 'blank-not-clickable' : ''}`}
+              onClick={() => handleWordClick(word)}
             >
               {isBlankWord && !isAnswered ? (
                 <input
@@ -63,13 +60,13 @@ export default function SentenceDisplay({
                   onClick={(e) => e.stopPropagation()}
                   autoFocus
                   style={{
-                    width: `${Math.max(sentence.answer.length * 1.5, 2)}em`,
-                    minWidth: '2em'
+                    width: `${Math.max(sentence.answer.length * 1.5, 4)}em`,
+                    minWidth: '4em'
                   }}
+                  placeholder="  "
                 />
               ) : isBlankWord && isAnswered ? (
-                // Make the answer word clickable by wrapping it in a span with the clickable-word class
-                <span className={`${feedback.includes('Correct') ? 'answer-correct' : 'answer-incorrect'} clickable-answer`}>
+                <span className={`${feedback?.includes('Correct') ? 'answer-correct' : 'answer-incorrect'} clickable-answer`}>
                   {sentence.answer}
                 </span>
               ) : (
@@ -80,8 +77,8 @@ export default function SentenceDisplay({
         })}
       </div>
 
-      {/* User's incorrect answer display */}
-      {isAnswered && !feedback.includes('Correct') && userAnswer && (
+      {/* Show user's wrong answer if not using "I don't know" */}
+      {isAnswered && !feedback?.includes('Correct') && userAnswer && !usedDontKnow && (
         <div className="user-answer-display">
           <span className="user-answer-label">You answered: </span>
           <span className="user-answer-value">{userAnswer}</span>

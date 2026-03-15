@@ -1,0 +1,218 @@
+{
+    "level": 4,
+    "name": "Days and Times",
+    "desc": "Learn to talk about days, time, and daily routines",
+    "icon": "⏰",
+    "sentences": [
+        {
+            "id": 401,
+            "text": "今天 星期 几 ？",
+            "native": "What day is today?",
+            "answer": "星期",
+            "explain": "星期 (xīngqī) means 'week'. 几 (jǐ) asks for a number.",
+            "words": [
+                190,
+                -422,
+                174,
+                2
+            ]
+        },
+        {
+            "id": 402,
+            "text": "今天 星期 一 。",
+            "native": "Today is Monday.",
+            "answer": "一",
+            "explain": "星期一 (xīngqī yī) means Monday. Numbers are used for days of the week.",
+            "words": [
+                190,
+                422,
+                -436,
+                0
+            ]
+        },
+        {
+            "id": 403,
+            "text": "明天 星期 几 ？",
+            "native": "What day is tomorrow?",
+            "answer": "明天",
+            "explain": "明天 (míngtiān) means 'tomorrow'.",
+            "words": [
+                -257,
+                422,
+                174,
+                2
+            ]
+        },
+        {
+            "id": 404,
+            "text": "昨天 是 星期 天 。",
+            "native": "Yesterday was Sunday.",
+            "answer": "昨天",
+            "explain": "昨天 (zuótiān) means 'yesterday'. 星期天 (xīngqī tiān) is Sunday.",
+            "words": [
+                -504,
+                346,
+                422,
+                424,
+                0
+            ]
+        },
+        {
+            "id": 405,
+            "text": "现在 几 点 ？",
+            "native": "What time is it now?",
+            "answer": "点",
+            "explain": "点 (diǎn) means 'o'clock'.",
+            "words": [
+                408,
+                174,
+                -85,
+                2
+            ]
+        },
+        {
+            "id": 406,
+            "text": "现在 八 点 。",
+            "native": "It's eight o'clock now.",
+            "answer": "八",
+            "explain": "八 (bā) is the number eight.",
+            "words": [
+                408,
+                -12,
+                85,
+                0
+            ]
+        },
+        {
+            "id": 407,
+            "text": "我 早上 八 点 起床 。",
+            "native": "I get up at 8 in the morning.",
+            "answer": "起床",
+            "explain": "起床 (qǐchuáng) means 'to get up'.",
+            "words": [
+                389,
+                468,
+                12,
+                85,
+                -297,
+                0
+            ]
+        },
+        {
+            "id": 408,
+            "text": "你 晚上 几点 睡觉 ？",
+            "native": "What time do you sleep at night?",
+            "answer": "睡觉",
+            "explain": "睡觉 (shuìjiào) means 'to sleep'.",
+            "words": [
+                280,
+                383,
+                174,
+                85,
+                -357,
+                2
+            ]
+        },
+        {
+            "id": 409,
+            "text": "我 晚上 十 点 睡觉 。",
+            "native": "I sleep at 10 at night.",
+            "answer": "十",
+            "explain": "十 (shí) means 'ten'.",
+            "words": [
+                389,
+                383,
+                -341,
+                85,
+                357,
+                0
+            ]
+        },
+        {
+            "id": 410,
+            "text": "你 明天 几点 上班 ？",
+            "native": "What time do you go to work tomorrow?",
+            "answer": "上班",
+            "explain": "上班 (shàngbān) means 'to go to work'.",
+            "words": [
+                280,
+                257,
+                174,
+                85,
+                -325,
+                2
+            ]
+        },
+        {
+            "id": 411,
+            "text": "我 下午 五 点 下班 。",
+            "native": "I get off work at 5 in the afternoon.",
+            "answer": "下班",
+            "explain": "下班 (xiàbān) means 'to get off work'.",
+            "words": [
+                389,
+                404,
+                391,
+                85,
+                -399,
+                0
+            ]
+        },
+        {
+            "id": 412,
+            "text": "你 中午 吃 什么 ？",
+            "native": "What do you eat at noon?",
+            "answer": "中午",
+            "explain": "中午 (zhōngwǔ) means 'noon'.",
+            "words": [
+                280,
+                -489,
+                55,
+                337,
+                2
+            ]
+        },
+        {
+            "id": 413,
+            "text": "我 中午 吃 米饭 。",
+            "native": "I eat rice at noon.",
+            "answer": "米饭",
+            "explain": "米饭 (mǐfàn) means 'cooked rice'.",
+            "words": [
+                389,
+                489,
+                55,
+                -251,
+                0
+            ]
+        },
+        {
+            "id": 414,
+            "text": "你 今年 几 岁 ？",
+            "native": "How old are you this year?",
+            "answer": "岁",
+            "explain": "岁 (suì) is the measure word for age.",
+            "words": [
+                280,
+                189,
+                174,
+                -362,
+                2
+            ]
+        },
+        {
+            "id": 415,
+            "text": "我 今年 二十 岁 。",
+            "native": "I am twenty years old this year.",
+            "answer": "二十",
+            "explain": "二十 (èrshí) means 'twenty'. Combine numbers for ages.",
+            "words": [
+                389,
+                189,
+                -367,
+                362,
+                0
+            ]
+        }
+    ]
+}

@@ -9,11 +9,17 @@ export default function WordGrid({
   onWordClick,
   isFoundation = false
 }) {
+
   return (
     <div className="word-grid">
       {words.map((word) => {
         const masteryCount = wordMastery[word.id] || 0;
         const isSelected = selectedWordId === word.id;
+
+        const wordForDisplay = {
+          ...word,
+          character: word.word
+        };
 
         return (
           <WordCard

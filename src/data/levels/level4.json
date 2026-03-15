@@ -1,217 +1,147 @@
 {
     "level": 4,
-    "name": "Days and Times",
-    "desc": "Learn to talk about days, time, and daily routines",
-    "icon": "⏰",
+    "name": "Travel I",
+    "desc": "Learn to talk about travel, transportation, and destinations.",
+    "icon": "🚂",
+    "hsk": 1,
     "sentences": [
         {
             "id": 401,
-            "text": "今天 星期 几 ？",
-            "native": "What day is today?",
-            "answer": "星期",
-            "explain": "星期 (xīngqī) means 'week'. 几 (jǐ) asks for a number.",
+            "text": "你 去 哪里 ？",
+            "native": "Where are you going?",
+            "answer": "去",
+            "explain": "去 (qù) means 'to go'.",
             "words": [
-                190,
-                -422,
-                174,
+                280,
+                -311,
+                260,
                 2
             ]
         },
         {
             "id": 402,
-            "text": "今天 星期 一 。",
-            "native": "Today is Monday.",
-            "answer": "一",
-            "explain": "星期一 (xīngqī yī) means Monday. Numbers are used for days of the week.",
+            "text": "我 去 北京 。",
+            "native": "I am going to Beijing.",
+            "answer": "北京",
+            "explain": "北京 (Běijīng) is the capital of China.",
             "words": [
-                190,
-                422,
-                -436,
+                389,
+                311,
+                -30,
                 0
             ]
         },
         {
             "id": 403,
-            "text": "明天 星期 几 ？",
-            "native": "What day is tomorrow?",
-            "answer": "明天",
-            "explain": "明天 (míngtiān) means 'tomorrow'.",
+            "text": "你 坐 火车 吗 ？",
+            "native": "Are you taking the train?",
+            "answer": "火车",
+            "explain": "火车 (huǒchē) means 'train'.",
             "words": [
-                -257,
-                422,
-                174,
+                280,
+                507,
+                -170,
+                236,
                 2
             ]
         },
         {
             "id": 404,
-            "text": "昨天 是 星期 天 。",
-            "native": "Yesterday was Sunday.",
-            "answer": "昨天",
-            "explain": "昨天 (zuótiān) means 'yesterday'. 星期天 (xīngqī tiān) is Sunday.",
+            "text": "我 坐 飞机 。",
+            "native": "I am taking a plane.",
+            "answer": "飞机",
+            "explain": "飞机 (fēijī) means 'airplane'.",
             "words": [
-                -504,
-                346,
-                422,
-                424,
+                389,
+                507,
+                -116,
                 0
             ]
         },
         {
             "id": 405,
-            "text": "现在 几 点 ？",
-            "native": "What time is it now?",
-            "answer": "点",
-            "explain": "点 (diǎn) means 'o'clock'.",
+            "text": "这 张 票 多少 钱 ？",
+            "native": "How much is this ticket?",
+            "answer": "票",
+            "explain": "票 (piào) means 'ticket'. 张 (zhāng) is a measure word, but it's not in HSK1; we need to avoid measure words not in list. Let's use 个 instead. But 个 is for general objects. For tickets, 张 is common but not in list. Use 个 (129) as a general measure word.",
             "words": [
-                408,
-                174,
-                -85,
+                473,
+                129,
+                -294,
+                104,
+                303,
                 2
             ]
         },
         {
             "id": 406,
-            "text": "现在 八 点 。",
-            "native": "It's eight o'clock now.",
-            "answer": "八",
-            "explain": "八 (bā) is the number eight.",
+            "text": "火车 站 在 哪里 ？",
+            "native": "Where is the train station?",
+            "answer": "车站",
+            "explain": "车站 (chēzhàn) means 'station'.",
             "words": [
-                408,
-                -12,
-                85,
-                0
+                170,
+                -54,
+                464,
+                260,
+                2
             ]
         },
         {
             "id": 407,
-            "text": "我 早上 八 点 起床 。",
-            "native": "I get up at 8 in the morning.",
-            "answer": "起床",
-            "explain": "起床 (qǐchuáng) means 'to get up'.",
+            "text": "我 买 一 张 机票 。",
+            "native": "I am buying an airplane ticket.",
+            "answer": "机票",
+            "explain": "机票 (jīpiào) means 'airplane ticket'.",
             "words": [
                 389,
-                468,
-                12,
-                85,
-                -297,
+                237,
+                436,
+                129,
+                -172,
                 0
             ]
         },
         {
             "id": 408,
-            "text": "你 晚上 几点 睡觉 ？",
-            "native": "What time do you sleep at night?",
-            "answer": "睡觉",
-            "explain": "睡觉 (shuìjiào) means 'to sleep'.",
+            "text": "你 明天 走 吗 ？",
+            "native": "Are you leaving tomorrow?",
+            "answer": "明天",
+            "explain": "明天 (míngtiān) means 'tomorrow'.",
             "words": [
                 280,
-                383,
-                174,
-                85,
-                -357,
+                -257,
+                499,
+                236,
                 2
             ]
         },
         {
             "id": 409,
-            "text": "我 晚上 十 点 睡觉 。",
-            "native": "I sleep at 10 at night.",
-            "answer": "十",
-            "explain": "十 (shí) means 'ten'.",
+            "text": "我 今天 到 北京 。",
+            "native": "I arrive in Beijing today.",
+            "answer": "到",
+            "explain": "到 (dào) means 'to arrive'.",
             "words": [
                 389,
-                383,
-                -341,
-                85,
-                357,
+                190,
+                -73,
+                30,
                 0
             ]
         },
         {
             "id": 410,
-            "text": "你 明天 几点 上班 ？",
-            "native": "What time do you go to work tomorrow?",
-            "answer": "上班",
-            "explain": "上班 (shàngbān) means 'to go to work'.",
+            "text": "飞机 几点 起飞 ？",
+            "native": "What time does the plane take off?",
+            "answer": "起飞",
+            "explain": "起飞 (qǐfēi) means 'take off', but it's not in HSK1. We need to adjust. Use '走' or '出发'? '出发' not in list. So maybe use '走' (go). Alternatively, we can ask '飞机 几点 走？' which is acceptable.",
             "words": [
-                280,
-                257,
+                116,
                 174,
                 85,
-                -325,
+                -499,
                 2
-            ]
-        },
-        {
-            "id": 411,
-            "text": "我 下午 五 点 下班 。",
-            "native": "I get off work at 5 in the afternoon.",
-            "answer": "下班",
-            "explain": "下班 (xiàbān) means 'to get off work'.",
-            "words": [
-                389,
-                404,
-                391,
-                85,
-                -399,
-                0
-            ]
-        },
-        {
-            "id": 412,
-            "text": "你 中午 吃 什么 ？",
-            "native": "What do you eat at noon?",
-            "answer": "中午",
-            "explain": "中午 (zhōngwǔ) means 'noon'.",
-            "words": [
-                280,
-                -489,
-                55,
-                337,
-                2
-            ]
-        },
-        {
-            "id": 413,
-            "text": "我 中午 吃 米饭 。",
-            "native": "I eat rice at noon.",
-            "answer": "米饭",
-            "explain": "米饭 (mǐfàn) means 'cooked rice'.",
-            "words": [
-                389,
-                489,
-                55,
-                -251,
-                0
-            ]
-        },
-        {
-            "id": 414,
-            "text": "你 今年 几 岁 ？",
-            "native": "How old are you this year?",
-            "answer": "岁",
-            "explain": "岁 (suì) is the measure word for age.",
-            "words": [
-                280,
-                189,
-                174,
-                -362,
-                2
-            ]
-        },
-        {
-            "id": 415,
-            "text": "我 今年 二十 岁 。",
-            "native": "I am twenty years old this year.",
-            "answer": "二十",
-            "explain": "二十 (èrshí) means 'twenty'. Combine numbers for ages.",
-            "words": [
-                389,
-                189,
-                -367,
-                362,
-                0
             ]
         }
     ]

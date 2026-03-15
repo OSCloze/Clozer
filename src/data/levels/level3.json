@@ -1,211 +1,152 @@
 {
     "level": 3,
-    "name": "Feelings",
-    "desc": "Learn to express emotions and physical states",
-    "icon": "😊",
+    "name": "Food & Drink I",
+    "desc": "Learn to talk about food, drinks, and dining.",
+    "icon": "🍜",
+    "hsk": 1,
     "sentences": [
         {
             "id": 301,
-            "text": "我 很 高兴 。",
-            "native": "I am very happy.",
-            "answer": "高兴",
-            "explain": "高兴 (gāoxìng) means 'happy'.",
+            "text": "你 想 吃 什么 ？",
+            "native": "What do you want to eat?",
+            "answer": "吃",
+            "explain": "吃 (chī) means 'to eat'.",
             "words": [
-                389,
-                155,
-                -125,
-                0
+                280,
+                409,
+                -55,
+                337,
+                2
             ]
         },
         {
             "id": 302,
-            "text": "你 累 吗 ？",
-            "native": "Are you tired?",
-            "answer": "累",
-            "explain": "累 (lèi) means 'tired'.",
+            "text": "我 想 喝 茶 。",
+            "native": "I want to drink tea.",
+            "answer": "喝",
+            "explain": "喝 (hē) means 'to drink'. 茶 (chá) is 'tea'.",
+            "words": [
+                389,
+                409,
+                -153,
+                45,
+                0
+            ]
+        },
+        {
+            "id": 303,
+            "text": "你 喜欢 吃 米饭 吗 ？",
+            "native": "Do you like to eat rice?",
+            "answer": "喜欢",
+            "explain": "喜欢 (xǐhuān) means 'to like'.",
             "words": [
                 280,
-                -220,
+                -397,
+                55,
+                251,
                 236,
                 2
             ]
         },
         {
-            "id": 303,
-            "text": "我 不 饿 。",
-            "native": "I am not hungry.",
-            "answer": "饿",
-            "explain": "饿 (è) means 'hungry'. 不 (bù) negates the feeling.",
+            "id": 304,
+            "text": "我 不 吃 肉 。",
+            "native": "I don't eat meat.",
+            "answer": "肉",
+            "explain": "肉 (ròu) means 'meat'.",
             "words": [
                 389,
                 43,
-                -105,
-                0
-            ]
-        },
-        {
-            "id": 304,
-            "text": "他 很 忙 。",
-            "native": "He is very busy.",
-            "answer": "忙",
-            "explain": "忙 (máng) means 'busy'.",
-            "words": [
-                363,
-                155,
-                -239,
+                55,
+                -319,
                 0
             ]
         },
         {
             "id": 305,
-            "text": "今天 很 热 。",
-            "native": "Today is hot.",
-            "answer": "热",
-            "explain": "热 (rè) means 'hot'.",
+            "text": "这 个 菜 很 好吃 。",
+            "native": "This dish is delicious.",
+            "answer": "好吃",
+            "explain": "好吃 (hǎochī) means 'delicious'.",
             "words": [
-                190,
+                473,
+                129,
+                44,
                 155,
-                -313,
+                -148,
                 0
             ]
         },
         {
             "id": 306,
-            "text": "我 渴 了 。",
-            "native": "I am thirsty.",
-            "answer": "渴",
-            "explain": "渴 (kě) means 'thirsty'. 了 (le) indicates a change of state.",
+            "text": "我 想 吃 面包 。",
+            "native": "I want to eat bread.",
+            "answer": "面包",
+            "explain": "面包 (miànbāo) means 'bread'.",
             "words": [
                 389,
-                -207,
-                219,
+                409,
+                55,
+                -252,
                 0
             ]
         },
         {
             "id": 307,
-            "text": "你 冷 吗 ？",
-            "native": "Are you cold?",
-            "answer": "冷",
-            "explain": "冷 (lěng) means 'cold'.",
+            "text": "你 喝 水 吗 ？",
+            "native": "Do you drink water?",
+            "answer": "水",
+            "explain": "水 (shuǐ) means 'water'.",
             "words": [
                 280,
-                -221,
+                153,
+                -354,
                 236,
                 2
             ]
         },
         {
             "id": 308,
-            "text": "我 有 一点 累 。",
-            "native": "I am a little tired.",
-            "answer": "一点",
-            "explain": "一点 (yīdiǎn) means 'a little'.",
+            "text": "请 给 我 一 杯 茶 。",
+            "native": "Please give me a cup of tea.",
+            "answer": "杯",
+            "explain": "杯 (bēi) is a measure word for cups.",
             "words": [
+                305,
+                130,
                 389,
-                450,
-                -446,
-                220,
+                436,
+                -26,
+                45,
                 0
             ]
         },
         {
             "id": 309,
-            "text": "她 也 很 高兴 。",
-            "native": "She is also very happy.",
-            "answer": "也",
-            "explain": "也 (yě) means 'also'.",
+            "text": "我 喜欢 吃 水果 。",
+            "native": "I like to eat fruit.",
+            "answer": "水果",
+            "explain": "水果 (shuǐguǒ) means 'fruit'.",
             "words": [
-                365,
-                -434,
-                155,
-                125,
+                389,
+                397,
+                55,
+                -355,
                 0
             ]
         },
         {
             "id": 310,
-            "text": "今天 太 热 了 ！",
-            "native": "Today is too hot!",
-            "answer": "太",
-            "explain": "太 (tài) means 'too' (excessively).",
-            "words": [
-                190,
-                -367,
-                313,
-                219,
-                3
-            ]
-        },
-        {
-            "id": 311,
-            "text": "我 不 太 高兴 。",
-            "native": "I am not very happy.",
-            "answer": "太",
-            "explain": "不太 (bù tài) means 'not very'.",
-            "words": [
-                389,
-                43,
-                -367,
-                125,
-                0
-            ]
-        },
-        {
-            "id": 312,
-            "text": "你 为什么 不 高兴 ？",
-            "native": "Why are you not happy?",
-            "answer": "为什么",
-            "explain": "为什么 (wèishénme) means 'why'.",
+            "text": "你 想 喝 牛奶 吗 ？",
+            "native": "Do you want to drink milk?",
+            "answer": "牛奶",
+            "explain": "牛奶 (niúnǎi) means 'milk'.",
             "words": [
                 280,
-                -469,
-                43,
-                125,
-                2
-            ]
-        },
-        {
-            "id": 313,
-            "text": "因为 我 累 了 。",
-            "native": "Because I am tired.",
-            "answer": "因为",
-            "explain": "因为 (yīnwèi) means 'because'.",
-            "words": [
-                -453,
-                389,
-                220,
-                219,
-                0
-            ]
-        },
-        {
-            "id": 314,
-            "text": "他 不 忙 ， 他 很 高兴 。",
-            "native": "He is not busy, he is very happy.",
-            "answer": "忙",
-            "explain": "忙 (máng) means 'busy'.",
-            "words": [
-                363,
-                43,
-                -239,
-                1,
-                363,
-                155,
-                125,
-                0
-            ]
-        },
-        {
-            "id": 315,
-            "text": "你 感觉 怎么样 ？",
-            "native": "How do you feel?",
-            "answer": "怎么样",
-            "explain": "怎么样 (zěnmeyàng) means 'how' or 'how about'.",
-            "words": [
-                280,
-                -469,
-                307,
+                409,
+                153,
+                -284,
+                236,
                 2
             ]
         }

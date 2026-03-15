@@ -1,220 +1,151 @@
 {
     "level": 5,
-    "name": "Going to School",
-    "desc": "Learn to talk about school activities and daily routines",
-    "icon": "🏫",
+    "name": "Shopping I",
+    "desc": "Learn to shop, ask prices, and talk about purchases.",
+    "icon": "🛒",
+    "hsk": 1,
     "sentences": [
         {
             "id": 501,
-            "text": "我们 去 学校 吧 。",
-            "native": "Let's go to school.",
-            "answer": "去",
-            "explain": "去 (qù) means 'to go'. 吧 (ba) is a suggestion particle.",
-            "words": [
-                390,
-                -311,
-                2,
-                14,
-                0
-            ]
-        },
-        {
-            "id": 502,
-            "text": "今天 天气 很 好 。",
-            "native": "The weather is very good today.",
-            "answer": "天气",
-            "explain": "天气 (tiānqì) means 'weather'.",
-            "words": [
-                190,
-                -369,
-                155,
-                147,
-                0
-            ]
-        },
-        {
-            "id": 503,
-            "text": "学校 里 有 很 多 学生 。",
-            "native": "There are many students in the school.",
-            "answer": "有",
-            "explain": "有 (yǒu) means 'there is/are'.",
-            "words": [
-                2,
-                222,
-                -450,
-                155,
-                103,
-                428,
-                0
-            ]
-        },
-        {
-            "id": 504,
-            "text": "我 喜欢 看 书 。",
-            "native": "I like reading books.",
-            "answer": "看",
-            "explain": "看 (kàn) means 'to look at' or 'to read'.",
-            "words": [
-                389,
-                397,
-                -201,
-                350,
-                0
-            ]
-        },
-        {
-            "id": 505,
-            "text": "老师 很 高 。",
-            "native": "The teacher is very tall.",
-            "answer": "高",
-            "explain": "高 (gāo) means 'tall'.",
-            "words": [
-                218,
-                155,
-                -124,
-                0
-            ]
-        },
-        {
-            "id": 506,
-            "text": "我们 在 学校 走 路 。",
-            "native": "We are walking at school.",
-            "answer": "走路",
-            "explain": "走路 (zǒulù) means 'to walk'.",
-            "words": [
-                390,
-                464,
-                2,
-                -500,
-                0
-            ]
-        },
-        {
-            "id": 507,
-            "text": "小孩儿 在 跑 。",
-            "native": "The children are running.",
-            "answer": "跑",
-            "explain": "跑 (pǎo) means 'to run'.",
-            "words": [
-                411,
-                464,
-                -292,
-                0
-            ]
-        },
-        {
-            "id": 508,
-            "text": "我 想 坐 在 椅子 上 。",
-            "native": "I want to sit on a chair.",
-            "answer": "坐",
-            "explain": "坐 (zuò) means 'to sit'. 椅子 (yǐzi) is 'chair'.",
-            "words": [
-                389,
-                409,
-                -507,
-                464,
-                2,
-                0
-            ]
-        },
-        {
-            "id": 509,
-            "text": "你 带 水 了 吗 ？",
-            "native": "Did you bring water?",
-            "answer": "水",
-            "explain": "水 (shuǐ) means 'water'. 带 (dài) means 'to bring'.",
-            "words": [
-                280,
-                -305,
-                354,
-                219,
-                236,
-                2
-            ]
-        },
-        {
-            "id": 510,
-            "text": "我 有 一些 面包 。",
-            "native": "I have some bread.",
+            "text": "我 想 买 面包 。",
+            "native": "I want to buy bread.",
             "answer": "面包",
             "explain": "面包 (miànbāo) means 'bread'.",
             "words": [
                 389,
-                450,
-                439,
+                409,
+                237,
                 -252,
                 0
             ]
         },
         {
-            "id": 511,
-            "text": "我们 一起 吃 东西 吧 。",
-            "native": "Let's eat something together.",
-            "answer": "一起",
-            "explain": "一起 (yīqǐ) means 'together'.",
-            "words": [
-                390,
-                -447,
-                55,
-                95,
-                14,
-                0
-            ]
-        },
-        {
-            "id": 512,
-            "text": "你 看 天上 的 云 。",
-            "native": "Look at the clouds in the sky.",
-            "answer": "看",
-            "explain": "看 (kàn) means 'to look'. 天上 (tiānshàng) means 'in the sky'.",
+            "id": 502,
+            "text": "你 要 买 什么 ？",
+            "native": "What do you want to buy?",
+            "answer": "买",
+            "explain": "买 (mǎi) means 'to buy'.",
             "words": [
                 280,
-                -201,
-                2,
-                76,
+                432,
+                -237,
+                337,
+                2
+            ]
+        },
+        {
+            "id": 503,
+            "text": "这 个 茶 多少 钱 ？",
+            "native": "How much is this tea?",
+            "answer": "钱",
+            "explain": "钱 (qián) means 'money' or 'price'.",
+            "words": [
+                473,
+                129,
+                45,
+                104,
+                -303,
+                2
+            ]
+        },
+        {
+            "id": 504,
+            "text": "太 贵 了 ！",
+            "native": "Too expensive!",
+            "answer": "贵",
+            "explain": "贵 (guì) means 'expensive'.",
+            "words": [
+                367,
+                -136,
+                219,
+                3
+            ]
+        },
+        {
+            "id": 505,
+            "text": "我 有 一 块 钱 。",
+            "native": "I have one yuan.",
+            "answer": "块",
+            "explain": "块 (kuài) is a colloquial measure word for yuan.",
+            "words": [
+                389,
+                450,
+                436,
+                -212,
+                303,
                 0
             ]
         },
         {
-            "id": 513,
-            "text": "下午 我们 回家 。",
-            "native": "We go home in the afternoon.",
-            "answer": "回家",
-            "explain": "回家 (huíjiā) means 'to go home'.",
+            "id": 506,
+            "text": "你 在 商店 里 吗 ？",
+            "native": "Are you in the shop?",
+            "answer": "商店",
+            "explain": "商店 (shāngdiàn) means 'shop'.",
             "words": [
-                404,
-                390,
-                -166,
-                0
-            ]
-        },
-        {
-            "id": 514,
-            "text": "今天 玩 得 很 高兴 。",
-            "native": "Today we had a lot of fun.",
-            "answer": "高兴",
-            "explain": "高兴 (gāoxìng) means 'happy'. 得 (de) connects verb and complement.",
-            "words": [
-                190,
-                380,
-                75,
-                155,
-                -125,
-                0
-            ]
-        },
-        {
-            "id": 515,
-            "text": "明天 还 来 吗 ？",
-            "native": "Will you come again tomorrow?",
-            "answer": "来",
-            "explain": "来 (lái) means 'to come'.",
-            "words": [
-                257,
-                141,
-                -214,
+                280,
+                464,
+                -323,
+                222,
                 236,
                 2
+            ]
+        },
+        {
+            "id": 507,
+            "text": "我 要 买 水果 。",
+            "native": "I want to buy fruit.",
+            "answer": "水果",
+            "explain": "水果 (shuǐguǒ) means 'fruit'.",
+            "words": [
+                389,
+                432,
+                237,
+                -355,
+                0
+            ]
+        },
+        {
+            "id": 508,
+            "text": "这 个 水果 很 好吃 。",
+            "native": "This fruit is delicious.",
+            "answer": "好吃",
+            "explain": "好吃 (hǎochī) means 'delicious'.",
+            "words": [
+                473,
+                129,
+                355,
+                155,
+                -148,
+                0
+            ]
+        },
+        {
+            "id": 509,
+            "text": "我 不 买 肉 。",
+            "native": "I don't buy meat.",
+            "answer": "肉",
+            "explain": "肉 (ròu) means 'meat'.",
+            "words": [
+                389,
+                43,
+                237,
+                -319,
+                0
+            ]
+        },
+        {
+            "id": 510,
+            "text": "请 给 我 水 。",
+            "native": "Please give me water.",
+            "answer": "水",
+            "explain": "水 (shuǐ) means 'water'.",
+            "words": [
+                305,
+                130,
+                389,
+                -354,
+                0
             ]
         }
     ]

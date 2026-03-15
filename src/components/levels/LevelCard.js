@@ -52,7 +52,7 @@ export default function LevelCard({
                     {isExpanded ? '▼' : '▶'}
                 </span>
                 <span className="level-name">
-                    Level {level.id}: {level.name}
+                    {level.id}: {level.name}
                     {level.icon && <span className="level-icon">{level.icon}</span>}
                 </span>
                 <span className="level-stats">

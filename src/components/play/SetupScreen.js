@@ -136,7 +136,7 @@ export default function SetupScreen({ onStart }) {
                 />
                 <span className="level-item-content">
                   <span className="level-item-name">
-                    Level {level.id}: {level.name}
+                    {level.id}: {level.name}
                   </span>
                   <span className="level-item-icon">{level.icon || ''}</span>
                 </span>

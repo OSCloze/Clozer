@@ -9,24 +9,24 @@ export default function LevelCard({
     learnedWords,
     wordMastery,
     sentences,
-    completedLevels, // Set of level IDs that have been completed with a perfect session
+    completedLevels,
     onSelectLevel,
     onWordClick
 }) {
     const [isExpanded, setIsExpanded] = useState(false);
     const navigate = useNavigate();
 
-    // Check if this level has been completed (all sentences correct in one session)
+    // Check if this level has been completed
     const isCompleted = completedLevels?.has(level.id) || false;
 
-    // Get all sentences for this level
-    const levelSentences = sentences.filter(s => s.level === level.id);
+    // Get all sentences for this level (with safety check)
+    const levelSentences = sentences?.filter(s => s.level === level.id) || [];
     const totalSentences = levelSentences.length;
 
     // Get keyword objects for display
     const levelWords = level.keywordIds || [];
     const keywords = levelWords
-        .map(id => words.find(w => w.id === id))
+        .map(id => words?.find(w => w.id === id))
         .filter(Boolean);
 
     const handlePractice = () => {
@@ -45,6 +45,12 @@ export default function LevelCard({
         }
     };
 
+    // Helper function to get pinyin for a word ID from processedWords
+    const getWordPinyin = (wordId, processedWords) => {
+        const word = processedWords?.find(w => w.wordId === wordId);
+        return word?.pinyin || '';
+    };
+
     return (
         <div className={`level-item ${isCompleted ? 'completed' : ''}`}>
             <div className="level-header" onClick={toggleExpand}>
@@ -52,7 +58,8 @@ export default function LevelCard({
                     {isExpanded ? '▼' : '▶'}
                 </span>
                 <span className="level-name">
-                    {level.name}
+                    Level {level.id}: {level.name}
+                    {level.icon && <span className="level-icon">{level.icon}</span>}
                 </span>
                 <span className="level-stats">
                     {isCompleted ? '✓ Completed' : `${totalSentences} sentences`}
@@ -63,37 +70,46 @@ export default function LevelCard({
                 <div className="level-content">
                     <p className="level-description">{level.description}</p>
 
-                    {/* Keywords grid using WordCard component */}
-                    <div className="keywords-section">
-                        <h4 className="keywords-title">Key Words in this Level:</h4>
-                        <div className="word-grid">
-                            {keywords.map(word => {
-                                const wordWithCharacter = {
-                                    ...word,
-                                    character: word.word
-                                };
+
+                    {/* Sentences list */}
+                    <div className="sentences-section">
+                        <h4 className="sentences-title">Sentences in this Level:</h4>
+                        <div className="sentences-list">
+                            {levelSentences.map((sentence, index) => {
+                                // Use processedWords for display
+                                const displayWords = sentence.processedWords || [];
 
                                 return (
-                                    <WordCard
-                                        key={word.id}
-                                        word={wordWithCharacter}
-                                        masteryCount={wordMastery[word.id] || 0}
-                                        isSelected={false}
-                                        onClick={() => handleWordClick(wordWithCharacter)}
-                                        isFoundation={level.id === 1}
-                                    />
+                                    <div key={sentence.id} className="sentence-item">
+                                        <div className="sentence-number">{index + 1}.</div>
+                                        <div className="sentence-content">
+                                            <div className="sentence-hanzi">
+                                                {displayWords.map((word, idx) => (
+                                                    <span
+                                                        key={idx}
+                                                        className={`sentence-word ${word.isPunctuation ? 'punctuation' : ''}`}
+                                                    >
+                                                        {word.text}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                            <div className="sentence-pinyin">
+                                                {displayWords.map((word, idx) => (
+                                                    <span key={idx} className="sentence-pinyin-word">
+                                                        {word.isPunctuation ? '' : word.pinyin}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                            <div className="sentence-english">
+                                                {sentence.nativeSentence}
+                                            </div>
+                                        </div>
+                                    </div>
                                 );
                             })}
                         </div>
                     </div>
 
-                    {/* Practice button */}
-                    <button
-                        className={`btn-secondary level-practice-btn ${isCompleted ? 'completed' : ''}`}
-                        onClick={handlePractice}
-                    >
-                        {isCompleted ? 'Practice Again' : 'Start Level'}
-                    </button>
                 </div>
             )}
         </div>

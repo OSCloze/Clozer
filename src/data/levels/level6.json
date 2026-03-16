@@ -9,148 +9,310 @@
             "id": 601,
             "text": "我 喜欢 看 书 。",
             "native": "I like reading books.",
-            "answer": "喜欢",
             "explain": "喜欢 (xǐhuān) means 'to like'.",
             "words": [
                 389,
-                -397,
+                397,
                 201,
                 350,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 397
+                },
+                {
+                    "position": 2,
+                    "wordId": 201
+                },
+                {
+                    "position": 3,
+                    "wordId": 350
+                }
             ]
         },
         {
             "id": 602,
             "text": "你 喜欢 听 音乐 吗 ？",
             "native": "Do you like listening to music?",
-            "answer": "听",
             "explain": "听 (tīng) means 'to listen'.",
             "words": [
                 280,
                 397,
-                -370,
+                370,
                 1180,
                 236,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 397
+                },
+                {
+                    "position": 2,
+                    "wordId": 370
+                },
+                {
+                    "position": 3,
+                    "wordId": 1180
+                },
+                {
+                    "position": 4,
+                    "wordId": 236
+                }
             ]
         },
         {
             "id": 603,
             "text": "我 也 喜欢 看 电影 。",
             "native": "I also like watching movies.",
-            "answer": "电影",
             "explain": "电影 (diànyǐng) means 'movie'.",
             "words": [
                 389,
                 434,
                 397,
                 201,
-                -91,
+                91,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 434
+                },
+                {
+                    "position": 2,
+                    "wordId": 397
+                },
+                {
+                    "position": 3,
+                    "wordId": 201
+                },
+                {
+                    "position": 4,
+                    "wordId": 91
+                }
             ]
         },
         {
             "id": 604,
             "text": "你 喜欢 打 球 吗 ？",
             "native": "Do you like playing ball?",
-            "answer": "打",
             "explain": "打 (dǎ) means 'to play' (ball games).",
             "words": [
                 280,
                 397,
-                -65,
+                65,
                 310,
                 236,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 397
+                },
+                {
+                    "position": 2,
+                    "wordId": 65
+                },
+                {
+                    "position": 3,
+                    "wordId": 310
+                },
+                {
+                    "position": 4,
+                    "wordId": 236
+                }
             ]
         },
         {
             "id": 605,
             "text": "我 喜欢 打 球 。",
             "native": "I like playing ball.",
-            "answer": "球",
             "explain": "球 (qiú) means 'ball'.",
             "words": [
                 389,
                 397,
                 65,
-                -310,
+                310,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 397
+                },
+                {
+                    "position": 2,
+                    "wordId": 65
+                },
+                {
+                    "position": 3,
+                    "wordId": 310
+                }
             ]
         },
         {
             "id": 606,
             "text": "我 会 唱 歌 。",
             "native": "I can sing.",
-            "answer": "唱",
             "explain": "唱 (chàng) means 'to sing'.",
             "words": [
                 389,
                 169,
-                -49,
+                49,
                 128,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 169
+                },
+                {
+                    "position": 2,
+                    "wordId": 49
+                },
+                {
+                    "position": 3,
+                    "wordId": 128
+                }
             ]
         },
         {
             "id": 607,
             "text": "你 会 唱 歌 吗 ？",
             "native": "Can you sing?",
-            "answer": "会",
             "explain": "会 (huì) means 'can'.",
             "words": [
                 280,
-                -169,
+                169,
                 49,
                 128,
                 236,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 169
+                },
+                {
+                    "position": 2,
+                    "wordId": 49
+                },
+                {
+                    "position": 3,
+                    "wordId": 128
+                },
+                {
+                    "position": 4,
+                    "wordId": 236
+                }
             ]
         },
         {
             "id": 608,
             "text": "我 不 会 唱 歌 。",
             "native": "I cannot sing.",
-            "answer": "不会",
             "explain": "不会 (bù huì) means 'cannot'.",
             "words": [
                 389,
                 43,
-                -169,
+                169,
                 49,
                 128,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 43
+                },
+                {
+                    "position": 2,
+                    "wordId": 169
+                },
+                {
+                    "position": 3,
+                    "wordId": 49
+                },
+                {
+                    "position": 4,
+                    "wordId": 128
+                }
             ]
         },
         {
             "id": 609,
             "text": "我们 一起 去 看电影 吧 。",
             "native": "Let's go watch a movie together.",
-            "answer": "一起",
             "explain": "一起 (yīqǐ) means 'together'.",
             "words": [
                 390,
-                -447,
+                447,
                 311,
                 201,
                 91,
                 14,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 447
+                },
+                {
+                    "position": 2,
+                    "wordId": 311
+                },
+                {
+                    "position": 3,
+                    "wordId": 201
+                },
+                {
+                    "position": 4,
+                    "wordId": 91
+                },
+                {
+                    "position": 5,
+                    "wordId": 14
+                }
             ]
         },
         {
             "id": 610,
             "text": "今天 你 想 做 什么 ？",
             "native": "What do you want to do today?",
-            "answer": "想",
             "explain": "想 (xiǎng) means 'to want'.",
             "words": [
                 190,
                 280,
-                -409,
+                409,
                 509,
                 337,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 190
+                },
+                {
+                    "position": 2,
+                    "wordId": 409
+                },
+                {
+                    "position": 3,
+                    "wordId": 509
+                },
+                {
+                    "position": 4,
+                    "wordId": 337
+                }
             ]
         }
     ]

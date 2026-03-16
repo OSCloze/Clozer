@@ -31,7 +31,7 @@ export default function WordModal({ wordId, onClose }) {
           {masteryCount > 0 && (
             <div className="word-mastery-modal">
               <span className="mastery-count">
-                ✓ {masteryCount}
+                🪙 {masteryCount}
               </span>
             </div>
           )}

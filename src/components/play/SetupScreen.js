@@ -1,10 +1,11 @@
 // src/components/play/SetupScreen.js
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
-import { getAvailableSentences, selectSessionSentences } from '../../utils/sentenceFilters';
+import { selectSessionSentences } from '../../utils/sentenceFilters';
+import { randomizeSessionSentences } from '../../utils/sentenceRandomizer';
 
 export default function SetupScreen({ onStart }) {
-  const { levels, sentences } = useApp();
+  const { levels, sentences, words } = useApp();
   const [selectedLevels, setSelectedLevels] = useState([1]);
   const [sessionSize, setSessionSize] = useState(10);
 
@@ -44,32 +45,46 @@ export default function SetupScreen({ onStart }) {
         return;
       }
 
-      const levelSentencesMap = {};
+      // Get all sentences from selected levels
+      let available = [];
       selectedLevels.forEach(levelId => {
-        levelSentencesMap[levelId] = getAvailableSentences(sentences, levelId);
+        const levelSentences = sentences.filter(s => s.level === levelId);
+        available = [...available, ...levelSentences];
       });
 
-      const emptyLevels = selectedLevels.filter(levelId => levelSentencesMap[levelId].length === 0);
-      if (emptyLevels.length > 0) {
-        alert(`Levels ${emptyLevels.join(', ')} have no sentences yet.`);
+      if (available.length === 0) {
+        alert('No sentences available for the selected levels.');
         return;
       }
 
+      // Case 1: More levels than questions
       if (selectedLevels.length > sessionSize) {
+        // Randomly select which levels to include
         const shuffledLevels = [...selectedLevels].sort(() => Math.random() - 0.5);
         const levelsToUse = shuffledLevels.slice(0, sessionSize);
 
+        // Get sentences from selected levels
         let selectedSentences = [];
         levelsToUse.forEach(levelId => {
-          const levelSentences = levelSentencesMap[levelId];
-          const randomIndex = Math.floor(Math.random() * levelSentences.length);
-          selectedSentences.push(levelSentences[randomIndex]);
+          const levelSentences = available.filter(s => s.level === levelId);
+          if (levelSentences.length > 0) {
+            const randomIndex = Math.floor(Math.random() * levelSentences.length);
+            selectedSentences.push(levelSentences[randomIndex]);
+          }
         });
 
-        const finalSession = selectedSentences.sort(() => Math.random() - 0.5);
+        // Randomize target words
+        const finalSession = randomizeSessionSentences(selectedSentences, words);
         onStart(finalSession);
         return;
       }
+
+      // Case 2: Fewer or equal levels than questions
+      // Group sentences by level
+      const sentencesByLevel = {};
+      selectedLevels.forEach(levelId => {
+        sentencesByLevel[levelId] = available.filter(s => s.level === levelId);
+      });
 
       const sentencesPerLevel = Math.floor(sessionSize / selectedLevels.length);
       const remainder = sessionSize % selectedLevels.length;
@@ -77,13 +92,17 @@ export default function SetupScreen({ onStart }) {
       let selectedSentences = [];
 
       selectedLevels.forEach((levelId, index) => {
-        const levelSentences = levelSentencesMap[levelId];
+        const levelSentences = sentencesByLevel[levelId];
+        // Shuffle the level's sentences
         const shuffled = [...levelSentences].sort(() => Math.random() - 0.5);
+
+        // Take sentencesPerLevel, plus one extra for the first 'remainder' levels
         const takeCount = sentencesPerLevel + (index < remainder ? 1 : 0);
         selectedSentences = [...selectedSentences, ...shuffled.slice(0, takeCount)];
       });
 
-      const finalSession = selectedSentences.sort(() => Math.random() - 0.5);
+      // Randomize target words for each sentence
+      const finalSession = randomizeSessionSentences(selectedSentences, words);
       onStart(finalSession);
     } catch (error) {
       console.error('Error starting session:', error);
@@ -99,7 +118,7 @@ export default function SetupScreen({ onStart }) {
         {/* Level Selection */}
         <div className="play-config-row">
           <label className="play-config-label">
-            Select Levels
+            Select Levels to Practice
           </label>
 
           <div className="level-list-container">
@@ -112,12 +131,19 @@ export default function SetupScreen({ onStart }) {
                 />
                 <span className="level-item-content">
                   <span className="level-item-name">
-                    {level.name}
+                    Level {level.id}: {level.name}
                   </span>
                   <span className="level-item-icon">{level.icon || ''}</span>
                 </span>
               </label>
             ))}
+          </div>
+
+          {/* Selection summary and buttons */}
+          <div className="level-selection-footer">
+            <span className="config-hint">
+              {selectedLevels.length} level{selectedLevels.length !== 1 ? 's' : ''} selected
+            </span>
           </div>
         </div>
 

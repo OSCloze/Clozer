@@ -1,6 +1,6 @@
 // src/data/loaders.js
 import wordsData from './words.json';
-import { processWordsArray, extractWordIds, extractContextWordIds } from '../utils/sentenceHelpers';
+import { processWordsArray, extractWordIds } from '../utils/sentenceHelpers';
 
 function importAll(r) {
     return r.keys().map(r);
@@ -14,46 +14,52 @@ export const loadSentences = async () => {
 
     levelModules.forEach(levelData => {
         const sentences = levelData.sentences.map(s => {
-            // Find the target word ID from the negative value
-            const blankValue = s.words.find(v => v < 0);
-            const targetWordId = blankValue ? Math.abs(blankValue) : null;
-
-            // CRITICAL: Process the words array to convert numbers into rich objects
-            const processedWords = processWordsArray(s.words, targetWordId, wordsData);
-
-            // Extract word IDs for filtering (optional but useful)
+            // Extract all word IDs (positive values only, no blanks yet)
             const wordIds = extractWordIds(s.words);
-            const contextWordIds = extractContextWordIds(s.words, targetWordId);
+
+            // If candidates not specified, use all content words (excluding punctuation) as potential targets
+            // But we should exclude pronouns and common particles for better learning experience
+            // For now, use all wordIds as candidates if not specified
+            const candidates = s.candidates || wordIds;
+
+            // Process words array for display purposes (when not in game mode)
+            const processedWords = processWordsArray(s.words, null, wordsData);
 
             return {
                 id: s.id,
                 text: s.text,
                 nativeSentence: s.native,
-                targetWordId: targetWordId,
-                wordIds: wordIds,
-                contextWordIds: contextWordIds,
                 level: levelData.level,
-                answer: s.answer,
-                explanation: s.explain,
-                words: processedWords,  // ✅ This now contains objects with .text, .isPunctuation, etc.
+                words: s.words, // Keep original words array (no blanks)
+                wordIds: wordIds,
+                candidates: candidates,
+                processedWords: processedWords, // For display in levels page
+                explanation: s.explain
             };
         });
 
         allSentences = [...allSentences, ...sentences];
     });
 
-    // Optional: sort by ID
     return allSentences.sort((a, b) => a.id - b.id);
 };
 
 export const loadLevels = async () => {
     return levelModules
         .map(level => {
+            // Get unique target word IDs from sentences (using candidates if available, otherwise from words)
             const targetWordIds = [...new Set(
-                level.sentences.map(s => {
-                    const blank = s.words.find(v => v < 0);
-                    return blank ? Math.abs(blank) : null;
-                }).filter(Boolean)
+                level.sentences.flatMap(s => {
+                    // If candidates exist, use them; otherwise extract from words
+                    if (s.candidates) {
+                        return s.candidates;
+                    } else {
+                        // Extract all content words (excluding punctuation)
+                        return s.words
+                            .filter(val => Math.abs(val) > 9)
+                            .map(val => Math.abs(val));
+                    }
+                })
             )];
 
             return {

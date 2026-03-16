@@ -9,143 +9,285 @@
             "id": 501,
             "text": "我 想 买 面包 。",
             "native": "I want to buy bread.",
-            "answer": "面包",
             "explain": "面包 (miànbāo) means 'bread'.",
             "words": [
                 389,
                 409,
                 237,
-                -252,
+                252,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 409
+                },
+                {
+                    "position": 2,
+                    "wordId": 237
+                },
+                {
+                    "position": 3,
+                    "wordId": 252
+                }
             ]
         },
         {
             "id": 502,
             "text": "你 要 买 什么 ？",
             "native": "What do you want to buy?",
-            "answer": "买",
             "explain": "买 (mǎi) means 'to buy'.",
             "words": [
                 280,
                 432,
-                -237,
+                237,
                 337,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 432
+                },
+                {
+                    "position": 2,
+                    "wordId": 237
+                },
+                {
+                    "position": 3,
+                    "wordId": 337
+                }
             ]
         },
         {
             "id": 503,
             "text": "这 个 茶 多少 钱 ？",
             "native": "How much is this tea?",
-            "answer": "钱",
             "explain": "钱 (qián) means 'money' or 'price'.",
             "words": [
                 473,
                 129,
                 45,
                 104,
-                -303,
+                303,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 473
+                },
+                {
+                    "position": 2,
+                    "wordId": 45
+                },
+                {
+                    "position": 3,
+                    "wordId": 104
+                },
+                {
+                    "position": 4,
+                    "wordId": 303
+                }
             ]
         },
         {
             "id": 504,
             "text": "太 贵 了 ！",
             "native": "Too expensive!",
-            "answer": "贵",
             "explain": "贵 (guì) means 'expensive'.",
             "words": [
                 367,
-                -136,
+                136,
                 219,
                 3
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 367
+                },
+                {
+                    "position": 1,
+                    "wordId": 136
+                },
+                {
+                    "position": 2,
+                    "wordId": 219
+                }
             ]
         },
         {
             "id": 505,
             "text": "我 有 一 块 钱 。",
             "native": "I have one yuan.",
-            "answer": "块",
             "explain": "块 (kuài) is a colloquial measure word for yuan.",
             "words": [
                 389,
                 450,
                 436,
-                -212,
+                212,
                 303,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 450
+                },
+                {
+                    "position": 3,
+                    "wordId": 212
+                },
+                {
+                    "position": 4,
+                    "wordId": 303
+                }
             ]
         },
         {
             "id": 506,
             "text": "你 在 商店 里 吗 ？",
             "native": "Are you in the shop?",
-            "answer": "商店",
             "explain": "商店 (shāngdiàn) means 'shop'.",
             "words": [
                 280,
                 464,
-                -323,
+                323,
                 222,
                 236,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 464
+                },
+                {
+                    "position": 2,
+                    "wordId": 323
+                },
+                {
+                    "position": 3,
+                    "wordId": 222
+                },
+                {
+                    "position": 4,
+                    "wordId": 236
+                }
             ]
         },
         {
             "id": 507,
             "text": "我 要 买 水果 。",
             "native": "I want to buy fruit.",
-            "answer": "水果",
             "explain": "水果 (shuǐguǒ) means 'fruit'.",
             "words": [
                 389,
                 432,
                 237,
-                -355,
+                355,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 432
+                },
+                {
+                    "position": 2,
+                    "wordId": 237
+                },
+                {
+                    "position": 3,
+                    "wordId": 355
+                }
             ]
         },
         {
             "id": 508,
             "text": "这 个 水果 很 好吃 。",
             "native": "This fruit is delicious.",
-            "answer": "好吃",
             "explain": "好吃 (hǎochī) means 'delicious'.",
             "words": [
                 473,
                 129,
                 355,
                 155,
-                -148,
+                148,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 473
+                },
+                {
+                    "position": 2,
+                    "wordId": 355
+                },
+                {
+                    "position": 3,
+                    "wordId": 155
+                },
+                {
+                    "position": 4,
+                    "wordId": 148
+                }
             ]
         },
         {
             "id": 509,
             "text": "我 不 买 肉 。",
             "native": "I don't buy meat.",
-            "answer": "肉",
             "explain": "肉 (ròu) means 'meat'.",
             "words": [
                 389,
                 43,
                 237,
-                -319,
+                319,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 43
+                },
+                {
+                    "position": 2,
+                    "wordId": 237
+                },
+                {
+                    "position": 3,
+                    "wordId": 319
+                }
             ]
         },
         {
             "id": 510,
             "text": "请 给 我 水 。",
             "native": "Please give me water.",
-            "answer": "水",
             "explain": "水 (shuǐ) means 'water'.",
             "words": [
                 305,
                 130,
                 389,
-                -354,
+                354,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 305
+                },
+                {
+                    "position": 1,
+                    "wordId": 130
+                },
+                {
+                    "position": 3,
+                    "wordId": 354
+                }
             ]
         }
     ]

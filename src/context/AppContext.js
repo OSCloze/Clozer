@@ -13,15 +13,10 @@ export function AppProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Word mastery counts (persisted in localStorage)
+  // Word mastery counts (persisted in localStorage) - start with empty object
   const [wordMastery, setWordMastery] = useState(() => {
     const saved = localStorage.getItem('wordMastery');
-    if (saved) return JSON.parse(saved);
-    // Initialize with some known words (level 1 basics)
-    const initial = {
-      1: 1, 2: 1, 3: 1, 6: 1, 7: 1, 11: 1
-    };
-    return initial;
+    return saved ? JSON.parse(saved) : {}; // Start empty
   });
 
   // Save mastery to localStorage whenever it changes
@@ -69,7 +64,15 @@ export function AppProvider({ children }) {
     }));
   };
 
-  // Mark a level as completed (all sentences correct in one session)
+  // Reset all progress to zero
+  const resetProgress = () => {
+    setWordMastery({});               // Clear all mastery counts
+    setCompletedLevels(new Set());    // Clear completed levels
+    localStorage.removeItem('wordMastery'); // Remove from localStorage
+    console.log('Progress reset to zero');
+  };
+
+  // Mark a level as completed
   const completeLevel = (levelId) => {
     setCompletedLevels(prev => new Set([...prev, levelId]));
   };
@@ -77,6 +80,11 @@ export function AppProvider({ children }) {
   // Check if a level is completed
   const isLevelCompleted = (levelId) => {
     return completedLevels.has(levelId);
+  };
+
+  // Check if a word is learned
+  const isWordLearned = (wordId) => {
+    return learnedWords.has(wordId);
   };
 
   // Get mastery count for a word
@@ -92,11 +100,13 @@ export function AppProvider({ children }) {
     wordMastery,
     getWordMastery,
     incrementMastery,
+    resetProgress,
     selectedLevel,
     setSelectedLevel,
     completedLevels,
     isLevelCompleted,
     completeLevel,
+    isWordLearned,
     loading,
     error
   };

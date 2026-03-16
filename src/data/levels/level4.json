@@ -9,139 +9,265 @@
             "id": 401,
             "text": "你 去 哪里 ？",
             "native": "Where are you going?",
-            "answer": "去",
-            "explain": "去 (qù) means 'to go'.",
+            "explain": "去 (qù) means 'to go'. 哪里 (nǎlǐ) means 'where'.",
             "words": [
                 280,
-                -311,
+                311,
                 260,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 311
+                },
+                {
+                    "position": 2,
+                    "wordId": 260
+                }
             ]
         },
         {
             "id": 402,
             "text": "我 去 北京 。",
             "native": "I am going to Beijing.",
-            "answer": "北京",
             "explain": "北京 (Běijīng) is the capital of China.",
             "words": [
                 389,
                 311,
-                -30,
+                30,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 311
+                },
+                {
+                    "position": 2,
+                    "wordId": 30
+                }
             ]
         },
         {
             "id": 403,
             "text": "你 坐 火车 吗 ？",
             "native": "Are you taking the train?",
-            "answer": "火车",
             "explain": "火车 (huǒchē) means 'train'.",
             "words": [
                 280,
                 507,
-                -170,
+                170,
                 236,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 507
+                },
+                {
+                    "position": 2,
+                    "wordId": 170
+                },
+                {
+                    "position": 3,
+                    "wordId": 236
+                }
             ]
         },
         {
             "id": 404,
             "text": "我 坐 飞机 。",
             "native": "I am taking a plane.",
-            "answer": "飞机",
             "explain": "飞机 (fēijī) means 'airplane'.",
             "words": [
                 389,
                 507,
-                -116,
+                116,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 507
+                },
+                {
+                    "position": 2,
+                    "wordId": 116
+                }
             ]
         },
         {
             "id": 405,
-            "text": "这 张 票 多少 钱 ？",
+            "text": "这 个 票 多少 钱 ？",
             "native": "How much is this ticket?",
-            "answer": "票",
-            "explain": "票 (piào) means 'ticket'. 张 (zhāng) is a measure word, but it's not in HSK1; we need to avoid measure words not in list. Let's use 个 instead. But 个 is for general objects. For tickets, 张 is common but not in list. Use 个 (129) as a general measure word.",
+            "explain": "票 (piào) means 'ticket'. 个 (gè) is a general measure word.",
             "words": [
                 473,
                 129,
-                -294,
+                294,
                 104,
                 303,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 473
+                },
+                {
+                    "position": 2,
+                    "wordId": 294
+                },
+                {
+                    "position": 3,
+                    "wordId": 104
+                },
+                {
+                    "position": 4,
+                    "wordId": 303
+                }
             ]
         },
         {
             "id": 406,
             "text": "火车 站 在 哪里 ？",
             "native": "Where is the train station?",
-            "answer": "车站",
             "explain": "车站 (chēzhàn) means 'station'.",
             "words": [
                 170,
-                -54,
+                54,
                 464,
                 260,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 170
+                },
+                {
+                    "position": 1,
+                    "wordId": 54
+                },
+                {
+                    "position": 2,
+                    "wordId": 464
+                },
+                {
+                    "position": 3,
+                    "wordId": 260
+                }
             ]
         },
         {
             "id": 407,
-            "text": "我 买 一 张 机票 。",
+            "text": "我 买 一 个 机票 。",
             "native": "I am buying an airplane ticket.",
-            "answer": "机票",
             "explain": "机票 (jīpiào) means 'airplane ticket'.",
             "words": [
                 389,
                 237,
                 436,
                 129,
-                -172,
+                172,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 237
+                },
+                {
+                    "position": 4,
+                    "wordId": 172
+                }
             ]
         },
         {
             "id": 408,
             "text": "你 明天 走 吗 ？",
             "native": "Are you leaving tomorrow?",
-            "answer": "明天",
-            "explain": "明天 (míngtiān) means 'tomorrow'.",
+            "explain": "明天 (míngtiān) means 'tomorrow'. 走 (zǒu) means 'to leave'.",
             "words": [
                 280,
-                -257,
+                257,
                 499,
                 236,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 257
+                },
+                {
+                    "position": 2,
+                    "wordId": 499
+                },
+                {
+                    "position": 3,
+                    "wordId": 236
+                }
             ]
         },
         {
             "id": 409,
             "text": "我 今天 到 北京 。",
             "native": "I arrive in Beijing today.",
-            "answer": "到",
             "explain": "到 (dào) means 'to arrive'.",
             "words": [
                 389,
                 190,
-                -73,
+                73,
                 30,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 190
+                },
+                {
+                    "position": 2,
+                    "wordId": 73
+                },
+                {
+                    "position": 3,
+                    "wordId": 30
+                }
             ]
         },
         {
             "id": 410,
-            "text": "飞机 几点 起飞 ？",
-            "native": "What time does the plane take off?",
-            "answer": "起飞",
-            "explain": "起飞 (qǐfēi) means 'take off', but it's not in HSK1. We need to adjust. Use '走' or '出发'? '出发' not in list. So maybe use '走' (go). Alternatively, we can ask '飞机 几点 走？' which is acceptable.",
+            "text": "飞机 几点 走 ？",
+            "native": "What time does the plane leave?",
+            "explain": "几点 (jǐ diǎn) means 'what time'. 走 (zǒu) means 'to leave'.",
             "words": [
                 116,
                 174,
                 85,
-                -499,
+                499,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 116
+                },
+                {
+                    "position": 1,
+                    "wordId": 174
+                },
+                {
+                    "position": 2,
+                    "wordId": 85
+                },
+                {
+                    "position": 3,
+                    "wordId": 499
+                }
             ]
         }
     ]

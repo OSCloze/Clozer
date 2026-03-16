@@ -9,134 +9,240 @@
       "id": 201,
       "text": "我 很 高兴 。",
       "native": "I am happy.",
-      "answer": "高兴",
       "explain": "高兴 (gāoxìng) means 'happy'.",
       "words": [
         389,
         155,
-        -125,
+        125,
         0
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 155
+        },
+        {
+          "position": 2,
+          "wordId": 125
+        }
       ]
     },
     {
       "id": 202,
       "text": "你 累 吗 ？",
       "native": "Are you tired?",
-      "answer": "累",
       "explain": "累 (lèi) means 'tired'.",
       "words": [
         280,
-        -220,
+        220,
         236,
         2
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 220
+        },
+        {
+          "position": 2,
+          "wordId": 236
+        }
       ]
     },
     {
       "id": 203,
       "text": "他 很 忙 。",
       "native": "He is busy.",
-      "answer": "忙",
       "explain": "忙 (máng) means 'busy'.",
       "words": [
         363,
         155,
-        -239,
+        239,
         0
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 155
+        },
+        {
+          "position": 2,
+          "wordId": 239
+        }
       ]
     },
     {
       "id": 204,
       "text": "今天 很 冷 。",
       "native": "Today is cold.",
-      "answer": "冷",
       "explain": "冷 (lěng) means 'cold'.",
       "words": [
         190,
         155,
-        -221,
+        221,
         0
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 155
+        },
+        {
+          "position": 2,
+          "wordId": 221
+        }
       ]
     },
     {
       "id": 205,
       "text": "我 不 饿 。",
       "native": "I am not hungry.",
-      "answer": "饿",
       "explain": "饿 (è) means 'hungry'.",
       "words": [
         389,
         43,
-        -105,
+        105,
         0
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 43
+        },
+        {
+          "position": 2,
+          "wordId": 105
+        }
       ]
     },
     {
       "id": 206,
       "text": "她 渴 了 。",
       "native": "She is thirsty.",
-      "answer": "渴",
       "explain": "渴 (kě) means 'thirsty'. 了 (le) indicates a change of state.",
       "words": [
         365,
-        -207,
+        207,
         219,
         0
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 207
+        },
+        {
+          "position": 2,
+          "wordId": 219
+        }
       ]
     },
     {
       "id": 207,
       "text": "我们 都 很 热 。",
       "native": "We are all hot.",
-      "answer": "热",
       "explain": "热 (rè) means 'hot'.",
       "words": [
         390,
         98,
         155,
-        -313,
+        313,
         0
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 98
+        },
+        {
+          "position": 2,
+          "wordId": 155
+        },
+        {
+          "position": 3,
+          "wordId": 313
+        }
       ]
     },
     {
       "id": 208,
       "text": "你 也 很 高兴 吗 ？",
       "native": "Are you also happy?",
-      "answer": "高兴",
       "explain": "高兴 (gāoxìng) means 'happy'.",
       "words": [
         280,
         434,
         155,
-        -125,
+        125,
         236,
         2
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 434
+        },
+        {
+          "position": 2,
+          "wordId": 155
+        },
+        {
+          "position": 3,
+          "wordId": 125
+        },
+        {
+          "position": 4,
+          "wordId": 236
+        }
       ]
     },
     {
       "id": 209,
       "text": "我 不 忙 。",
       "native": "I am not busy.",
-      "answer": "忙",
       "explain": "忙 (máng) means 'busy'.",
       "words": [
         389,
         43,
-        -239,
+        239,
         0
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 43
+        },
+        {
+          "position": 2,
+          "wordId": 239
+        }
       ]
     },
     {
       "id": 210,
       "text": "今天 太 热 了 ！",
       "native": "Today is too hot!",
-      "answer": "热",
       "explain": "太 (tài) means 'too' (excessively).",
       "words": [
         190,
-        -367,
+        367,
         313,
         219,
         3
+      ],
+      "candidates": [
+        {
+          "position": 1,
+          "wordId": 367
+        },
+        {
+          "position": 2,
+          "wordId": 313
+        },
+        {
+          "position": 3,
+          "wordId": 219
+        }
       ]
     }
   ]

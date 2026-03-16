@@ -33,7 +33,7 @@ export default function LevelsPage() {
         <section className="view is-active" data-view="levels">
             <header className="header">
                 <h1>Levels</h1>
-                <p className="header-desc">Master Chinese step by step</p>
+                <p className="header-desc">Explore sentences</p>
             </header>
 
             <div className="levels-container">

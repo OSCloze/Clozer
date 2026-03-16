@@ -1342,6 +1342,299 @@ body {
 
 .mastery-count {
   font-size: 1.1rem;
-  color: var(--correct);
+  color: var(--accent2);
   font-weight: 600;
 }
+/* Sentences section */
+.sentences-section {
+  margin: 1.5rem 0;
+}
+
+.sentences-title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  color: var(--accent2);
+  margin-bottom: 1rem;
+}
+
+.sentences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.sentence-item {
+  display: flex;
+  gap: 0.75rem;
+  margin: 2px;
+  padding: 1rem;
+  background: var(--surface2);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.sentence-item:hover {
+  background: var(--surface);
+  border-color: var(--accent2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sentence-number {
+  font-family: var(--font-head);
+  font-weight: 600;
+  color: var(--accent2);
+  min-width: 2rem;
+  text-align: right;
+}
+
+.sentence-content {
+  flex: 1;
+}
+
+.sentence-hanzi {
+  font-size: 1.2rem;
+  font-family: "Noto Sans SC",
+    "Microsoft YaHei",
+    sans-serif;
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+}
+
+.sentence-word {
+  margin-right: 0.25rem;
+}
+
+.sentence-word.punctuation {
+  color: var(--muted);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.sentence-pinyin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  color: var(--accent2);
+}
+
+.sentence-pinyin-word {
+  margin-right: 0.25rem;
+}
+
+.sentence-english {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Scrollbar styling */
+.sentences-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sentences-list::-webkit-scrollbar-track {
+  background: var(--surface3);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.sentences-list::-webkit-scrollbar-thumb {
+  background: var(--accent2);
+  border-radius: 3px;
+}
+
+.sentences-list::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Settings Page */
+.settings-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--surface2);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+}
+
+.coin-counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--surface3);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-gold);
+  margin-bottom: 1rem;
+}
+
+.coin-emoji-wrapper {
+  margin-bottom: 1rem;
+}
+
+.coin-emoji {
+  font-size: 6rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.counter-stats {
+  text-align: center;
+}
+
+.counter-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.counter-value {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent2);
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset section CSS remains the same as before */
+
+/* Reset Section */
+.reset-section {
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.settings-subtitle {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent2);
+  margin: 0 0 0.75rem 0;
+  border-left: 3px solid var(--accent);
+  padding-left: 0.75rem;
+}
+
+.settings-desc {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.settings-list {
+  margin: 0 0 1.5rem 1.5rem;
+  color: var(--muted);
+}
+
+.settings-list li {
+  margin-bottom: 0.25rem;
+}
+
+.btn-danger {
+  background: rgba(184, 30, 20, 0.1);
+  color: var(--wrong);
+  border: 1.5px solid var(--wrong);
+  padding: 0.78rem 1.4rem;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.btn-danger:hover {
+  background: rgba(184, 30, 20, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(184, 30, 20, 0.3);
+}
+
+.btn-danger:active {
+  transform: scale(0.97);
+}
+
+.reset-confirm {
+  margin-top: 1rem;
+}
+
+.settings-warning {
+  margin: 0 0 1rem 0;
+  padding: 0.75rem;
+  background: rgba(184, 30, 20, 0.1);
+  border-radius: var(--radius);
+  color: var(--wrong);
+  border-left: 3px solid var(--wrong);
+  font-weight: 500;
+}
+
+.reset-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.reset-actions .btn-danger,
+.reset-actions .btn-secondary {
+  flex: 1;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 520px) {
+  .ancient-coin {
+    width: 120px;
+    height: 120px;
+  }
+
+  .coin-hole {
+    width: 25px;
+    height: 25px;
+  }
+
+  .coin-inscription-top {
+    top: 20px;
+    font-size: 1.1rem;
+  }
+
+  .coin-inscription-bottom {
+    bottom: 20px;
+    font-size: 1.1rem;
+  }
+
+  .coin-inscription-left {
+    left: 20px;
+    font-size: 1.1rem;
+  }
+
+  .coin-inscription-right {
+    right: 20px;
+    font-size: 1.1rem;
+  }
+
+  .counter-value {
+    font-size: 2.5rem;
+  }
+
+  .reset-actions {
+    flex-direction: column;
+  }
+}
+

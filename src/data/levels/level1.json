@@ -9,7 +9,6 @@
             "id": 101,
             "text": "你 好 吗 ？ 我 很 好 。",
             "native": "How are you? I'm very good.",
-            "answer": "好",
             "explain": "好 (hǎo) means 'good'. 很 (hěn) means 'very'.",
             "words": [
                 280,
@@ -18,133 +17,260 @@
                 2,
                 389,
                 155,
-                -147,
+                147,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 147
+                },
+                {
+                    "position": 5,
+                    "wordId": 155
+                },
+                {
+                    "position": 6,
+                    "wordId": 147
+                }
             ]
         },
         {
             "id": 102,
             "text": "你 叫 什么 名字 ？",
             "native": "What is your name?",
-            "answer": "名字",
             "explain": "名字 (míngzi) means 'name'.",
             "words": [
                 280,
                 185,
                 337,
-                -254,
+                254,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 185
+                },
+                {
+                    "position": 2,
+                    "wordId": 337
+                },
+                {
+                    "position": 3,
+                    "wordId": 254
+                }
             ]
         },
         {
             "id": 103,
             "text": "我 是 学生 。 你 呢 ？",
             "native": "I am a student. And you?",
-            "answer": "学生",
             "explain": "学生 (xuésheng) means 'student'. 呢 (ne) turns the question back.",
             "words": [
                 389,
                 346,
-                -428,
+                428,
                 0,
                 280,
                 278,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 346
+                },
+                {
+                    "position": 2,
+                    "wordId": 428
+                },
+                {
+                    "position": 5,
+                    "wordId": 278
+                }
             ]
         },
         {
             "id": 104,
             "text": "你 是 老师 吗 ？",
             "native": "Are you a teacher?",
-            "answer": "老师",
             "explain": "老师 (lǎoshī) means 'teacher'.",
             "words": [
                 280,
                 346,
-                -218,
+                218,
                 236,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 346
+                },
+                {
+                    "position": 2,
+                    "wordId": 218
+                },
+                {
+                    "position": 3,
+                    "wordId": 236
+                }
             ]
         },
         {
             "id": 105,
             "text": "我 也 是 学生 。",
             "native": "I am also a student.",
-            "answer": "也",
             "explain": "也 (yě) means 'also'.",
             "words": [
                 389,
-                -434,
+                434,
                 346,
                 428,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 434
+                },
+                {
+                    "position": 2,
+                    "wordId": 346
+                },
+                {
+                    "position": 3,
+                    "wordId": 428
+                }
             ]
         },
         {
             "id": 106,
             "text": "他 是 谁 ？",
             "native": "Who is he?",
-            "answer": "谁",
             "explain": "谁 (shéi) means 'who'.",
             "words": [
                 363,
                 346,
-                -334,
+                334,
                 2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 363
+                },
+                {
+                    "position": 1,
+                    "wordId": 346
+                },
+                {
+                    "position": 2,
+                    "wordId": 334
+                }
             ]
         },
         {
             "id": 107,
             "text": "她 是 我 的 朋友 。",
             "native": "She is my friend.",
-            "answer": "朋友",
             "explain": "朋友 (péngyou) means 'friend'.",
             "words": [
                 365,
                 346,
                 389,
                 76,
-                -293,
+                293,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 365
+                },
+                {
+                    "position": 1,
+                    "wordId": 346
+                },
+                {
+                    "position": 3,
+                    "wordId": 76
+                },
+                {
+                    "position": 4,
+                    "wordId": 293
+                }
             ]
         },
         {
             "id": 108,
             "text": "我们 都 是 学生 。",
             "native": "We are all students.",
-            "answer": "都",
             "explain": "都 (dōu) means 'all'.",
             "words": [
                 390,
-                -98,
+                98,
                 346,
                 428,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 98
+                },
+                {
+                    "position": 2,
+                    "wordId": 346
+                },
+                {
+                    "position": 3,
+                    "wordId": 428
+                }
             ]
         },
         {
             "id": 109,
             "text": "很 高兴 认识 你 。",
             "native": "Nice to meet you.",
-            "answer": "认识",
             "explain": "认识 (rènshi) means 'to meet'.",
             "words": [
                 155,
                 125,
-                -315,
+                315,
                 280,
                 0
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 155
+                },
+                {
+                    "position": 1,
+                    "wordId": 125
+                },
+                {
+                    "position": 2,
+                    "wordId": 315
+                }
             ]
         },
         {
             "id": 110,
             "text": "再 见 ！",
             "native": "Goodbye!",
-            "answer": "再见",
             "explain": "再见 (zàijiàn) means 'goodbye'.",
             "words": [
-                -463,
+                463,
                 3
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 463
+                }
             ]
         }
     ]

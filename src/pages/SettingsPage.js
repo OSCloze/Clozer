@@ -30,7 +30,7 @@ export default function SettingsPage() {
         {/* Coin Counter with Emoji */}
         <div className="coin-counter-container">
           <div className="coin-emoji-wrapper">
-            <span className="coin-emoji">🪙</span>
+            <span className="coin-emoji">🪭</span>
           </div>
           <div className="counter-stats">
             <span className="counter-label">Total Correct Answers</span>

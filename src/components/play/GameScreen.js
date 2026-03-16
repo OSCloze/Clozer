@@ -1,5 +1,5 @@
 // src/components/play/GameScreen.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import SentenceDisplay from './SentenceDisplay';
 import TranslationBox from './TranslationBox';
 
@@ -20,6 +20,20 @@ export default function GameScreen({
   usedDontKnow,
   words
 }) {
+  // When the question is answered, pressing Enter triggers the next question
+  useEffect(() => {
+    if (isAnswered) {
+      const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          onNext();
+        }
+      };
+      window.addEventListener('keydown', handleKeyDown);
+      return () => window.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [isAnswered, onNext]);
+
   const handleCheck = () => {
     onCheck();
   };
@@ -105,7 +119,6 @@ export default function GameScreen({
             >
               {currentIndex + 1 >= sessionSentences.length ? 'See Results' : 'Next'}
             </button>
-            {/* Explanation button and box removed */}
           </div>
         )}
       </div>

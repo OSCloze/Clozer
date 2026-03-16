@@ -20,16 +20,15 @@ export default function SentenceDisplay({
   };
 
   const handleWordClick = (word) => {
-    // Allow clicking on any non-punctuation word
+    // word is an object from processedWords
     if (!word.isPunctuation && word.wordId) {
       const isBlankWord = word.isBlank;
-
       // Only allow click if:
       // - It's not the blank word, OR
       // - It IS the blank word AND the question has been answered
       if (!isBlankWord || (isBlankWord && isAnswered)) {
         onWordClick({
-          text: word.text === "___" ? sentence.answer : word.text,
+          text: word.isBlank ? sentence.answer : word.text,
           pinyin: word.pinyin,
           meaning: word.meaning,
           wordId: word.wordId
@@ -38,37 +37,8 @@ export default function SentenceDisplay({
     }
   };
 
-  // Process words for display (convert number array to objects with text)
-  const displayWords = sentence.words.map(value => {
-    // Handle punctuation (0-9)
-    if (value >= 0 && value <= 9) {
-      const punctuationMap = { 0: "。", 1: "，", 2: "？", 3: "！" };
-      return {
-        text: punctuationMap[value] || "？",
-        isPunctuation: true,
-        isBlank: false
-      };
-    }
-
-    // Handle blank (negative value)
-    if (value < 0) {
-      const wordId = Math.abs(value);
-      return {
-        text: "___",
-        wordId: wordId,
-        isBlank: true,
-        isPunctuation: false
-      };
-    }
-
-    // Handle regular word (positive value)
-    return {
-      text: sentence.processedWords?.find(w => w.wordId === value)?.text || "?",
-      wordId: value,
-      isBlank: false,
-      isPunctuation: false
-    };
-  });
+  // Use processedWords directly from the sentence (provided by randomizer)
+  const displayWords = sentence.processedWords || [];
 
   return (
     <>
@@ -95,7 +65,7 @@ export default function SentenceDisplay({
                     width: `${Math.max(sentence.answer.length * 1.5, 4)}em`,
                     minWidth: '4em'
                   }}
-                  placeholder="  "
+                  placeholder=" "
                 />
               ) : isBlankWord && isAnswered ? (
                 <span className={`${feedback?.includes('Correct') ? 'answer-correct' : 'answer-incorrect'} clickable-answer`}>

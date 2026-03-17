@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Clozer/static/css/main.43c4156e.css",
-    "main.js": "/Clozer/static/js/main.faff0961.js",
+    "main.js": "/Clozer/static/js/main.021c8ba2.js",
     "static/js/453.4a3a137e.chunk.js": "/Clozer/static/js/453.4a3a137e.chunk.js",
     "index.html": "/Clozer/index.html",
     "main.43c4156e.css.map": "/Clozer/static/css/main.43c4156e.css.map",
-    "main.faff0961.js.map": "/Clozer/static/js/main.faff0961.js.map",
+    "main.021c8ba2.js.map": "/Clozer/static/js/main.021c8ba2.js.map",
     "453.4a3a137e.chunk.js.map": "/Clozer/static/js/453.4a3a137e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43c4156e.css",
-    "static/js/main.faff0961.js"
+    "static/js/main.021c8ba2.js"
   ]
 }

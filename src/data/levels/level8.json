@@ -1,0 +1,191 @@
+{
+    "level": 8,
+    "name": "Nicks Words",
+    "desc": "Phrases I want to focus on.",
+    "icon": "😎",
+    "hsk": 1,
+    "sentences": [
+        {
+            "id": 801,
+            "text": "你学了多久了？",
+            "native": "How long have you been studying?",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                280,
+                427,
+                219,
+                658,
+                219,
+                2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 280
+                },
+                {
+                    "position": 1,
+                    "wordId": 427
+                },
+                {
+                    "position": 3,
+                    "wordId": 658
+                }
+            ]
+        },
+        {
+            "id": 802,
+            "text": "我需要练习。",
+            "native": "I need to practice.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                389,
+                2097,
+                862,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 2097
+                },
+                {
+                    "position": 2,
+                    "wordId": 862
+                }
+            ]
+        },
+        {
+            "id": 803,
+            "text": "你为什么开始学习？",
+            "native": "Why did you start studying?",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                280,
+                1080,
+                1689,
+                429,
+                2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 1080
+                },
+                {
+                    "position": 2,
+                    "wordId": 1689
+                },
+                {
+                    "position": 3,
+                    "wordId": 429
+                }
+            ]
+        },
+        {
+            "id": 804,
+            "text": "你去过中国吗？",
+            "native": "Have you been to China?",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                280,
+                311,
+                140,
+                486,
+                236,
+                2
+            ],
+            "candidates": [
+                {
+                    "position": 3,
+                    "wordId": 486
+                },
+                {
+                    "position": 4,
+                    "wordId": 236
+                }
+            ]
+        },
+        {
+            "id": 806,
+            "text": "今年秋天，我将去中国留学。",
+            "native": "This fall, I will study abroad in China.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                189,
+                954,
+                1,
+                389,
+                3642,
+                311,
+                486,
+                1742,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 189
+                },
+                {
+                    "position": 1,
+                    "wordId": 954
+                },
+                {
+                    "position": 4,
+                    "wordId": 3642
+                },
+                {
+                    "position": 5,
+                    "wordId": 311
+                },
+                {
+                    "position": 7,
+                    "wordId": 1742
+                }
+            ]
+        },
+        {
+            "id": 808,
+            "text": "我很高兴能去中国留学。",
+            "native": "I am very happy to study abroad in China.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                389,
+                155,
+                125,
+                279,
+                311,
+                486,
+                1742,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 155
+                },
+                {
+                    "position": 2,
+                    "wordId": 125
+                },
+                {
+                    "position": 3,
+                    "wordId": 279
+                },
+                {
+                    "position": 4,
+                    "wordId": 311
+                },
+                {
+                    "position": 5,
+                    "wordId": 486
+                },
+                {
+                    "position": 6,
+                    "wordId": 1742
+                }
+            ]
+        }
+    ]
+}

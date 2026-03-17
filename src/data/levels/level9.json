@@ -1,0 +1,385 @@
+{
+    "level": 9,
+    "name": "New Level 9",
+    "desc": "lvl 9",
+    "icon": "📚",
+    "hsk": 1,
+    "sentences": [
+        {
+            "id": 901,
+            "text": "我在学汉语。",
+            "native": "I'm learning Chinese.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                389,
+                464,
+                427,
+                145,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 464
+                },
+                {
+                    "position": 2,
+                    "wordId": 427
+                },
+                {
+                    "position": 3,
+                    "wordId": 145
+                }
+            ]
+        },
+        {
+            "id": 902,
+            "text": "中文很难。",
+            "native": "Chinese is difficult.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                488,
+                155,
+                277,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 2,
+                    "wordId": 277
+                }
+            ]
+        },
+        {
+            "id": 903,
+            "text": "你说英语吗？",
+            "native": "do you speak english?",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                280,
+                358,
+                1186,
+                236,
+                2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 358
+                },
+                {
+                    "position": 2,
+                    "wordId": 1186
+                },
+                {
+                    "position": 3,
+                    "wordId": 236
+                }
+            ]
+        },
+        {
+            "id": 904,
+            "text": "请你说慢一点儿。",
+            "native": "Please speak slower.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                305,
+                280,
+                358,
+                238,
+                446,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 305
+                },
+                {
+                    "position": 2,
+                    "wordId": 358
+                },
+                {
+                    "position": 3,
+                    "wordId": 238
+                },
+                {
+                    "position": 4,
+                    "wordId": 446
+                }
+            ]
+        },
+        {
+            "id": 905,
+            "text": "你会说中文吗？",
+            "native": "Can you speak Chinese?",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                280,
+                169,
+                358,
+                488,
+                236,
+                2
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 169
+                },
+                {
+                    "position": 3,
+                    "wordId": 488
+                }
+            ]
+        },
+        {
+            "id": 906,
+            "text": "我想吃中国菜。",
+            "native": "I want to eat Chinese food.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                389,
+                409,
+                55,
+                486,
+                44,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 409
+                },
+                {
+                    "position": 3,
+                    "wordId": 486
+                },
+                {
+                    "position": 4,
+                    "wordId": 44
+                }
+            ]
+        },
+        {
+            "id": 907,
+            "text": "我的爱好是看书。",
+            "native": "My hobby is reading books.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                389,
+                76,
+                11,
+                346,
+                201,
+                350,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 2,
+                    "wordId": 11
+                },
+                {
+                    "position": 3,
+                    "wordId": 346
+                },
+                {
+                    "position": 4,
+                    "wordId": 201
+                },
+                {
+                    "position": 5,
+                    "wordId": 350
+                }
+            ]
+        },
+        {
+            "id": 908,
+            "text": "你觉得这个电影怎么样？我觉得很有意思。",
+            "native": "What do you think of this movie?I find it very interesting.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                280,
+                196,
+                473,
+                129,
+                91,
+                1219,
+                2,
+                389,
+                4759,
+                624,
+                155,
+                450,
+                1175,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 1,
+                    "wordId": 196
+                },
+                {
+                    "position": 4,
+                    "wordId": 91
+                },
+                {
+                    "position": 5,
+                    "wordId": 1219
+                },
+                {
+                    "position": 8,
+                    "wordId": 4759
+                },
+                {
+                    "position": 10,
+                    "wordId": 155
+                },
+                {
+                    "position": 12,
+                    "wordId": 1175
+                }
+            ]
+        },
+        {
+            "id": 909,
+            "text": "他是我最好的朋友，我们常常一起打球。",
+            "native": "He's my best friend and we play together all the time.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                363,
+                346,
+                389,
+                502,
+                76,
+                293,
+                1,
+                390,
+                48,
+                447,
+                69,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 3,
+                    "wordId": 502
+                },
+                {
+                    "position": 5,
+                    "wordId": 293
+                },
+                {
+                    "position": 8,
+                    "wordId": 48
+                },
+                {
+                    "position": 9,
+                    "wordId": 447
+                },
+                {
+                    "position": 10,
+                    "wordId": 69
+                }
+            ]
+        },
+        {
+            "id": 910,
+            "text": "我昨天买了一本新书，今天晚上可以看。",
+            "native": "I bought a new book yesterday and will read it tonight.",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                389,
+                504,
+                237,
+                219,
+                436,
+                31,
+                420,
+                350,
+                1,
+                190,
+                383,
+                831,
+                201,
+                0
+            ],
+            "candidates": [
+                {
+                    "position": 9,
+                    "wordId": 190
+                },
+                {
+                    "position": 10,
+                    "wordId": 383
+                },
+                {
+                    "position": 1,
+                    "wordId": 504
+                }
+            ]
+        },
+        {
+            "id": 911,
+            "text": "请问，去火车站怎么走？",
+            "native": "Excuse me, how to get to the train station?",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                308,
+                1,
+                311,
+                1592,
+                51,
+                470,
+                469,
+                499,
+                2
+            ],
+            "candidates": [
+                {
+                    "position": 0,
+                    "wordId": 308
+                },
+                {
+                    "position": 6,
+                    "wordId": 469
+                }
+            ]
+        },
+        {
+            "id": 912,
+            "text": "这个字用中文怎么说？",
+            "native": "How do you say this word in Chinese?",
+            "explain": "Fill in the blanks with the correct words.",
+            "words": [
+                473,
+                129,
+                497,
+                449,
+                488,
+                469,
+                358,
+                2
+            ],
+            "candidates": [
+                {
+                    "position": 2,
+                    "wordId": 497
+                },
+                {
+                    "position": 3,
+                    "wordId": 449
+                },
+                {
+                    "position": 5,
+                    "wordId": 469
+                },
+                {
+                    "position": 6,
+                    "wordId": 358
+                }
+            ]
+        }
+    ]
+}
